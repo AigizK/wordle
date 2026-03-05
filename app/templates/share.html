@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ba">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ҺҮҘЛЕ — һөҙөмтә</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background: #0f1117;
+      color: #e8e6e3;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 24px 12px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 540px;
+    }
+    .card {
+      border: 1px solid #3a3d4a;
+      border-radius: 12px;
+      background: #1a1d27;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .title {
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 34px;
+      background: linear-gradient(135deg, #22c55e, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .meta {
+      color: #8b8d97;
+      font-size: 13px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      gap: 6px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px;
+    }
+    .cell {
+      border-radius: 6px;
+      border: 1px solid #3a3d4a;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 24px;
+      text-transform: uppercase;
+      background: #1e2028;
+    }
+    .cell.correct { background: #166534; border-color: #22c55e; }
+    .cell.present { background: #854d0e; border-color: #eab308; }
+    .cell.absent { background: #1e2028; border-color: #3a3d4a; color: #8b8d97; }
+    .answer {
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .small { color: #8b8d97; font-size: 13px; }
+    .error {
+      border: 1px solid #854d0e;
+      color: #eab308;
+      border-radius: 10px;
+      padding: 12px;
+      background: rgba(234,179,8,0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" data-token="{{ token }}" id="shareRoot">
+    <div class="title">ҺҮҘЛЕ</div>
+    <div class="meta">Wordle башҡортса • уртаҡлашылған һөҙөмтә</div>
+    <div id="shareContent" class="card">Йөкләнә...</div>
+  </div>
+  <script type="module" src="/static/share.js"></script>
+</body>
+</html>

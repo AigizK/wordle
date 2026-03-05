@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ba">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>ҺҮҘЛЕ — Wordle башҡортса</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css?v=20260305-1">
+</head>
+<body>
+<header>
+  <div style="text-align:center">
+    <div class="logo">ҺҮҘЛЕ</div>
+    <div class="subtitle">Wordle башҡортса </div>
+  </div>
+  <button class="help-btn" id="helpBtn">?</button>
+</header>
+
+<div id="dayUnavailable">Бөгөн яңы һүҙ юҡ.</div>
+
+<div id="game">
+  <div id="board"></div>
+</div>
+
+<div id="keyboard"></div>
+
+<div class="panel">
+  <h3>һөҙөмтә</h3>
+  <div class="kv" id="totalsBox"></div>
+</div>
+
+<div class="panel">
+  <h3>Бөгөнгө 10 еңеүсе</h3>
+  <div class="list" id="leaderboardBox"></div>
+</div>
+
+<div class="panel" style="padding-bottom:20px">
+  <h3>Һуңғы 10 көндәге һүҙҙәр</h3>
+  <div class="list" id="historyBox"></div>
+</div>
+
+<div id="toast-container"></div>
+
+<div class="modal-overlay" id="helpModal">
+  <div class="modal">
+    <h2>Ҡағиҙә</h2>
+    <p>5 хәрефтән торған һүҙҙе 6 ынтылыштан табып ҡара.</p>
+    <p>Һәр ынтылышта тулы һүҙ яҙ. Хәрефтәр төҫкә буяла:</p>
+    <div class="example-row">
+      <div class="mini-tile ex-correct">б</div>
+      <div class="mini-tile">а</div>
+      <div class="mini-tile">л</div>
+      <div class="mini-tile">ы</div>
+      <div class="mini-tile">ҡ</div>
+    </div>
+    <p><span style="color:var(--correct);font-weight:700">Йәшел</span> — хәреф дөрөҫ урында.</p>
+    <div class="example-row">
+      <div class="mini-tile">т</div>
+      <div class="mini-tile ex-present">а</div>
+      <div class="mini-tile">м</div>
+      <div class="mini-tile">ы</div>
+      <div class="mini-tile">р</div>
+    </div>
+    <p><span style="color:var(--present);font-weight:700">Һары</span> — хәреф бар, ләкин башҡа урында.</p>
+    <div class="example-row">
+      <div class="mini-tile">у</div>
+      <div class="mini-tile">р</div>
+      <div class="mini-tile">м</div>
+      <div class="mini-tile">а</div>
+      <div class="mini-tile ex-absent">н</div>
+    </div>
+    <p><span style="color:var(--text-dim);font-weight:700">Һоро</span> — хәреф һүҙҙә юҡ.</p>
+    <button class="close-btn" id="closeHelp">АҢЛАНЫМ!</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="endModal">
+  <div class="modal end-modal">
+    <h2 id="endTitle">Тәбрик!</h2>
+    <div class="answer-word" id="endWord"></div>
+    <div id="endDesc" style="font-size:13px;color:var(--text-dim);line-height:1.4"></div>
+    <div class="stats-row">
+      <div class="stat-item"><span class="num" id="statYourPlayed">0</span><span class="label">Һинең уйын</span></div>
+      <div class="stat-item"><span class="num" id="statYourWins">0</span><span class="label">Һинең еңеү</span></div>
+      <div class="stat-item"><span class="num" id="statPlace">-</span><span class="label">Урын</span></div>
+    </div>
+    <div id="endElapsed" style="font-size:12px;color:var(--accent);text-align:center"></div>
+
+    <div class="end-actions">
+      <button id="downloadResultBtn">PNG төшөрөү</button>
+      <button id="shareResultBtn">Һылтанма</button>
+    </div>
+    <div id="shareLinkBox"></div>
+
+    <button class="new-game-btn" id="newGameBtn">Ябырға</button>
+  </div>
+</div>
+
+<script type="module" src="/static/app.js?v=20260305-1"></script>
+</body>
+</html>

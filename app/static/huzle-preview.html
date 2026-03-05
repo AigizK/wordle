@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ba">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ҺҮҘЛЕ — Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --surface: #171c2e;
+      --border: #3d4460;
+      --text-dim: #9aa1b9;
+      --correct: #22c55e;
+      --present: #eab308;
+      --absent: #8a5a2f;
+      --tile-size: min(120px, calc((100vw - 64px) / 5));
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: "Noto Sans", sans-serif;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(33, 93, 187, 0.20), transparent 45%),
+        radial-gradient(circle at 80% 50%, rgba(36, 109, 208, 0.18), transparent 50%),
+        var(--bg);
+      color: #e6e9f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 16px 24px;
+    }
+
+    .top {
+      width: 100%;
+      max-width: 1080px;
+      border-bottom: 1px solid rgba(190, 199, 235, 0.25);
+      padding: 16px 0 12px;
+      position: relative;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: clamp(48px, 7vw, 64px);
+      letter-spacing: 4px;
+      line-height: 1;
+      background: linear-gradient(135deg, #29d4a5 0%, #4fb7ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: clamp(16px, 2.2vw, 38px);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #a0a8be;
+      font-weight: 600;
+    }
+
+    .help-btn {
+      position: absolute;
+      right: 0;
+      top: 8px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid #495171;
+      background: rgba(97, 104, 132, 0.2);
+      color: #9ca3bf;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 24px;
+    }
+
+    #board {
+      display: grid;
+      grid-template-rows: repeat(6, var(--tile-size));
+      gap: clamp(10px, 1.2vw, 18px);
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(5, var(--tile-size));
+      gap: clamp(10px, 1.2vw, 18px);
+    }
+
+    .tile {
+      width: var(--tile-size);
+      height: var(--tile-size);
+      border: 4px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: clamp(28px, 3.8vw, 54px);
+      text-transform: uppercase;
+      color: #f7f8fc;
+    }
+
+    .tile.correct {
+      background: #1f5138;
+      border-color: var(--correct);
+      box-shadow: 0 0 14px rgba(34, 197, 94, 0.35);
+    }
+
+    .tile.present {
+      background: #6c5712;
+      border-color: var(--present);
+      box-shadow: 0 0 12px rgba(234, 179, 8, 0.3);
+    }
+
+    .tile.absent {
+      background: #5a3a1f;
+      border-color: var(--absent);
+      box-shadow: 0 0 12px rgba(138, 90, 47, 0.28);
+    }
+
+    @media (max-width: 760px) {
+      .help-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 28px;
+      }
+
+      .top {
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="logo">ҺҮҘЛЕ</div>
+    <div class="subtitle">WORDLE БАШҠОРТСА</div>
+    <button class="help-btn" type="button" aria-label="Help">?</button>
+  </header>
+
+  <main>
+    <div id="board"></div>
+  </main>
+
+  <script>
+    const words = ["һүҙле", "уйнап", "телде", "өйрән"];
+    const states = ["correct", "present", "absent"];
+    const board = document.getElementById("board");
+
+    for (let rowIndex = 0; rowIndex < 6; rowIndex += 1) {
+      const row = document.createElement("div");
+      row.className = "row";
+      const word = words[rowIndex] || "";
+
+      for (let col = 0; col < 5; col += 1) {
+        const tile = document.createElement("div");
+        tile.className = "tile";
+
+        if (word[col]) {
+          tile.textContent = word[col];
+          const randomState = states[Math.floor(Math.random() * states.length)];
+          tile.classList.add(randomState);
+        }
+
+        row.appendChild(tile);
+      }
+
+      board.appendChild(row);
+    }
+  </script>
+</body>
+</html>

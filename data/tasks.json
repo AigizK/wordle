@@ -1,0 +1,3298 @@
+[
+  {
+    "word": "һомай",
+    "description": "Хумай"
+  },
+  {
+    "word": "рәхим",
+    "description": "милость"
+  },
+  {
+    "word": "малик",
+    "description": "владелец, хозяин, собственник"
+  },
+  {
+    "word": "ҡымыҙ",
+    "description": "кумыс"
+  },
+  {
+    "word": "һеңле",
+    "description": "младшая сестра"
+  },
+  {
+    "word": "арбаҙ",
+    "description": "заклинатель; колдун"
+  },
+  {
+    "word": "бабай",
+    "description": "дядя"
+  },
+  {
+    "word": "иҡбал",
+    "description": "алға барыу, уңышлы булыу; ҡаршы алыу, бәхет"
+  },
+  {
+    "word": "сабаҡ",
+    "description": "плотва"
+  },
+  {
+    "word": "кәмал",
+    "description": "совершенный"
+  },
+  {
+    "word": "сыбай",
+    "description": "продолговатый, удлиненный"
+  },
+  {
+    "word": "кәлам",
+    "description": "слово, речь"
+  },
+  {
+    "word": "тобал",
+    "description": "плата"
+  },
+  {
+    "word": "касак",
+    "description": "трос, канат"
+  },
+  {
+    "word": "тубал",
+    "description": "лукошко"
+  },
+  {
+    "word": "жәуаз",
+    "description": "возможность, допустимость, позволительность; законность"
+  },
+  {
+    "word": "табаҡ",
+    "description": "лист"
+  },
+  {
+    "word": "зәуал",
+    "description": "гибель"
+  },
+  {
+    "word": "ҡабаҡ",
+    "description": "тыква"
+  },
+  {
+    "word": "мәҡам",
+    "description": "көй, торған урын"
+  },
+  {
+    "word": "һабаҡ",
+    "description": "стебель"
+  },
+  {
+    "word": "фәсад",
+    "description": "боҙоҡ, боҙоҡлоҡ; аҙғынлыҡ; фетнә"
+  },
+  {
+    "word": "балаҡ",
+    "description": "штанина"
+  },
+  {
+    "word": "хижаб",
+    "description": "пәрҙә; оялыу"
+  },
+  {
+    "word": "бапаҡ",
+    "description": "бука"
+  },
+  {
+    "word": "ғораб",
+    "description": "ворон"
+  },
+  {
+    "word": "башаҡ",
+    "description": "колос"
+  },
+  {
+    "word": "абхаз",
+    "description": "абхазец"
+  },
+  {
+    "word": "баҙам",
+    "description": "миндаль"
+  },
+  {
+    "word": "баҡай",
+    "description": "бабка"
+  },
+  {
+    "word": "кәбәк",
+    "description": "мякина"
+  },
+  {
+    "word": "айғаҡ",
+    "description": "неизвестный; незнакомый; чужой"
+  },
+  {
+    "word": "бәбәк",
+    "description": "зародыш"
+  },
+  {
+    "word": "бивак",
+    "description": "привал, расположение войск вне населённого пункта"
+  },
+  {
+    "word": "йәнүб",
+    "description": "юг"
+  },
+  {
+    "word": "билал",
+    "description": "полевой лунь"
+  },
+  {
+    "word": "күбек",
+    "description": "пузырчатый"
+  },
+  {
+    "word": "борай",
+    "description": "полба"
+  },
+  {
+    "word": "кәкүк",
+    "description": "кукушка"
+  },
+  {
+    "word": "борам",
+    "description": "паром"
+  },
+  {
+    "word": "кәкәй",
+    "description": "бяка"
+  },
+  {
+    "word": "ботаҡ",
+    "description": "ветвь"
+  },
+  {
+    "word": "кәрәҙ",
+    "description": "соты"
+  },
+  {
+    "word": "боғал",
+    "description": "лассо"
+  },
+  {
+    "word": "кәтүк",
+    "description": "катушка"
+  },
+  {
+    "word": "боғаҙ",
+    "description": "пролив"
+  },
+  {
+    "word": "кәүәк",
+    "description": "мякина; полова"
+  },
+  {
+    "word": "көбәк",
+    "description": "ствол"
+  },
+  {
+    "word": "боғаҡ",
+    "description": "зоб"
+  },
+  {
+    "word": "сәбил",
+    "description": "дорога"
+  },
+  {
+    "word": "бысаҡ",
+    "description": "нож"
+  },
+  {
+    "word": "тәбиғ",
+    "description": "печатник"
+  },
+  {
+    "word": "армай",
+    "description": "наказание плетьми"
+  },
+  {
+    "word": "бәдәл",
+    "description": "Наёмное паломничество в Мекку"
+  },
+  {
+    "word": "арҙаҡ",
+    "description": "избалованный, изнеженный ребёнок"
+  },
+  {
+    "word": "бәйге",
+    "description": "беговой"
+  },
+  {
+    "word": "атлам",
+    "description": "расстояние в один шаг"
+  },
+  {
+    "word": "бәйел",
+    "description": "Олицетворение характера, натуры человека; его желания; его двойник, внутреннее «я»"
+  },
+  {
+    "word": "ахмаҡ",
+    "description": "глупый"
+  },
+  {
+    "word": "бәкәл",
+    "description": "бабка"
+  },
+  {
+    "word": "аэроб",
+    "description": "аэробный"
+  },
+  {
+    "word": "бәләк",
+    "description": "валёк"
+  },
+  {
+    "word": "бәрей",
+    "description": "бес, нечистая сила"
+  },
+  {
+    "word": "ашнаҡ",
+    "description": "лачуга"
+  },
+  {
+    "word": "бәрҙе",
+    "description": "хариус"
+  },
+  {
+    "word": "аҡшам",
+    "description": "сумерки"
+  },
+  {
+    "word": "бәүел",
+    "description": "моча"
+  },
+  {
+    "word": "аҫҡаҡ",
+    "description": "крюк"
+  },
+  {
+    "word": "бәпәй",
+    "description": "малыш"
+  },
+  {
+    "word": "бәҡиа",
+    "description": "остатки, остальное"
+  },
+  {
+    "word": "кейек",
+    "description": "дичь"
+  },
+  {
+    "word": "вәкил",
+    "description": "уполномоченный"
+  },
+  {
+    "word": "кейем",
+    "description": "одежда"
+  },
+  {
+    "word": "быуаҡ",
+    "description": "пот"
+  },
+  {
+    "word": "келәй",
+    "description": "проклейка"
+  },
+  {
+    "word": "вәғиз",
+    "description": "агитатор"
+  },
+  {
+    "word": "кейеҙ",
+    "description": "войлок, кошма"
+  },
+  {
+    "word": "вәғәз",
+    "description": "проповедь"
+  },
+  {
+    "word": "керем",
+    "description": "приход"
+  },
+  {
+    "word": "дәлил",
+    "description": "аргумент"
+  },
+  {
+    "word": "кенәз",
+    "description": "княжеский"
+  },
+  {
+    "word": "дәхел",
+    "description": "вмешательство"
+  },
+  {
+    "word": "кетәк",
+    "description": "птичник"
+  },
+  {
+    "word": "дарай",
+    "description": "Водное растение из семейства луковичных"
+  },
+  {
+    "word": "кеҫәл",
+    "description": "кисель"
+  },
+  {
+    "word": "дауам",
+    "description": "продолжение"
+  },
+  {
+    "word": "кикел",
+    "description": "хохол"
+  },
+  {
+    "word": "дудаҡ",
+    "description": "губа"
+  },
+  {
+    "word": "килем",
+    "description": "доход"
+  },
+  {
+    "word": "жәдәл",
+    "description": "бәхәсләшеү, һүҙ көрәштереү"
+  },
+  {
+    "word": "кимек",
+    "description": "больной; хворающий; страдающий от болезни"
+  },
+  {
+    "word": "жәләл",
+    "description": "блеск"
+  },
+  {
+    "word": "кирге",
+    "description": "пяльцы"
+  },
+  {
+    "word": "запал",
+    "description": "затравка"
+  },
+  {
+    "word": "кирем",
+    "description": "ковёр (настенный)"
+  },
+  {
+    "word": "зәңге",
+    "description": "цинга"
+  },
+  {
+    "word": "кимәк",
+    "description": "кимаки (древний тюркоязычный народ)"
+  },
+  {
+    "word": "ибраз",
+    "description": "выставление"
+  },
+  {
+    "word": "кимәл",
+    "description": "уровень"
+  },
+  {
+    "word": "икрам",
+    "description": "почет"
+  },
+  {
+    "word": "киҙәк",
+    "description": "дежурство"
+  },
+  {
+    "word": "илһам",
+    "description": "вдохновение"
+  },
+  {
+    "word": "киҫек",
+    "description": "усечённый"
+  },
+  {
+    "word": "ирсал",
+    "description": "отправка"
+  },
+  {
+    "word": "киҫем",
+    "description": "разрез"
+  },
+  {
+    "word": "иршад",
+    "description": "инструкция"
+  },
+  {
+    "word": "киҫәк",
+    "description": "часть"
+  },
+  {
+    "word": "итлаҡ",
+    "description": "освобождение"
+  },
+  {
+    "word": "иғдам",
+    "description": "геноцид"
+  },
+  {
+    "word": "иғлам",
+    "description": "белдереү, аңлатыу"
+  },
+  {
+    "word": "йомаҡ",
+    "description": "загадка"
+  },
+  {
+    "word": "йоҙаҡ",
+    "description": "замок"
+  },
+  {
+    "word": "күгәл",
+    "description": "күгәл өйрәк"
+  },
+  {
+    "word": "йәйек",
+    "description": "ельник"
+  },
+  {
+    "word": "күкәй",
+    "description": "яйцо"
+  },
+  {
+    "word": "йыһаз",
+    "description": "утварь"
+  },
+  {
+    "word": "күлем",
+    "description": "перерыв (во время полевых работ)"
+  },
+  {
+    "word": "йәнәй",
+    "description": "ЕНЕЙ, баш. племя"
+  },
+  {
+    "word": "күрек",
+    "description": "меха"
+  },
+  {
+    "word": "йәсле",
+    "description": "ясельный"
+  },
+  {
+    "word": "күнәк",
+    "description": "ведро"
+  },
+  {
+    "word": "йәйем",
+    "description": "раскатка (теста, глины и т. п.)"
+  },
+  {
+    "word": "күнсе",
+    "description": "кожевник"
+  },
+  {
+    "word": "йәҙәк",
+    "description": "Помощь государства населению во время голода"
+  },
+  {
+    "word": "күрем",
+    "description": "менструация"
+  },
+  {
+    "word": "йәһүд",
+    "description": "еврейский"
+  },
+  {
+    "word": "күңел",
+    "description": "душа"
+  },
+  {
+    "word": "малай",
+    "description": "мальчик"
+  },
+  {
+    "word": "күрше",
+    "description": "сосед"
+  },
+  {
+    "word": "миҙал",
+    "description": "медаль"
+  },
+  {
+    "word": "күҫәк",
+    "description": "дубина"
+  },
+  {
+    "word": "маҡам",
+    "description": "диал. ҡар. һарай"
+  },
+  {
+    "word": "күҙәй",
+    "description": "глазеет"
+  },
+  {
+    "word": "миҫал",
+    "description": "пример"
+  },
+  {
+    "word": "көйәк",
+    "description": "набрюшник"
+  },
+  {
+    "word": "намаҙ",
+    "description": "намаз"
+  },
+  {
+    "word": "көйөк",
+    "description": "гарь"
+  },
+  {
+    "word": "мысай",
+    "description": "лисохвост"
+  },
+  {
+    "word": "көйөҙ",
+    "description": "ворсовый ковёр"
+  },
+  {
+    "word": "көрәк",
+    "description": "лопата"
+  },
+  {
+    "word": "низам",
+    "description": "воспитание"
+  },
+  {
+    "word": "көсөк",
+    "description": "щенок"
+  },
+  {
+    "word": "низағ",
+    "description": "конфликт"
+  },
+  {
+    "word": "көшөл",
+    "description": "ворох"
+  },
+  {
+    "word": "нифаҡ",
+    "description": "двойные стандарты"
+  },
+  {
+    "word": "көҙөк",
+    "description": "гнетущее чувство досады"
+  },
+  {
+    "word": "нуғай",
+    "description": "ногаец"
+  },
+  {
+    "word": "ләпәк",
+    "description": "крот обыкновенный"
+  },
+  {
+    "word": "ләңге",
+    "description": "бортевая перекладина"
+  },
+  {
+    "word": "олпаҡ",
+    "description": "маленькая подушка из верблюжьей шерсти"
+  },
+  {
+    "word": "мәйел",
+    "description": "предрасположение"
+  },
+  {
+    "word": "онтаҡ",
+    "description": "пылевидный"
+  },
+  {
+    "word": "мәләк",
+    "description": "ангел"
+  },
+  {
+    "word": "орпаҡ",
+    "description": "потомство; родня"
+  },
+  {
+    "word": "мәмәй",
+    "description": "мягкотелый"
+  },
+  {
+    "word": "осраҡ",
+    "description": "случай"
+  },
+  {
+    "word": "мәнеғ",
+    "description": "запрет чего-л."
+  },
+  {
+    "word": "рижал",
+    "description": "ир кеше"
+  },
+  {
+    "word": "мәрке",
+    "description": "берестяной короб"
+  },
+  {
+    "word": "остаҙ",
+    "description": "устаз"
+  },
+  {
+    "word": "мәҡәл",
+    "description": "пословица"
+  },
+  {
+    "word": "сатаҡ",
+    "description": "недостаток, неправильность, ненормальность"
+  },
+  {
+    "word": "мәрәй",
+    "description": "очко"
+  },
+  {
+    "word": "саҡаҡ",
+    "description": "и. анат. диал. ҡар. соңҡа"
+  },
+  {
+    "word": "мәңке",
+    "description": "мормыль; мормышка"
+  },
+  {
+    "word": "сираж",
+    "description": "норичник"
+  },
+  {
+    "word": "мәҫәл",
+    "description": "басня"
+  },
+  {
+    "word": "сираҡ",
+    "description": "голень"
+  },
+  {
+    "word": "нәсим",
+    "description": "лёгкий ветерок"
+  },
+  {
+    "word": "сиҡаҡ",
+    "description": "икота"
+  },
+  {
+    "word": "нәпсе",
+    "description": "вожделение, страсть"
+  },
+  {
+    "word": "страм",
+    "description": "и. диал. ҡар. хурлыҡ"
+  },
+  {
+    "word": "нәфел",
+    "description": "бүләк, яҡшы эш"
+  },
+  {
+    "word": "супай",
+    "description": "хохлатый"
+  },
+  {
+    "word": "нәфсе",
+    "description": "желание"
+  },
+  {
+    "word": "сусаҡ",
+    "description": "высокая отвесная гора"
+  },
+  {
+    "word": "нәҫел",
+    "description": "потомок"
+  },
+  {
+    "word": "сырай",
+    "description": "лицо"
+  },
+  {
+    "word": "нәүем",
+    "description": "сон"
+  },
+  {
+    "word": "сыраҡ",
+    "description": "факел"
+  },
+  {
+    "word": "нәүғе",
+    "description": "вид, разновидность"
+  },
+  {
+    "word": "суҡаҡ",
+    "description": "выступ"
+  },
+  {
+    "word": "пәрей",
+    "description": "ангел"
+  },
+  {
+    "word": "сыуал",
+    "description": "глинянная печка"
+  },
+  {
+    "word": "рабби",
+    "description": "бог мой"
+  },
+  {
+    "word": "сыуаҡ",
+    "description": "ясный"
+  },
+  {
+    "word": "рабиғ",
+    "description": "весенний сезон"
+  },
+  {
+    "word": "сыҙам",
+    "description": "двужильный"
+  },
+  {
+    "word": "рубеж",
+    "description": "и. кит. ҡар. сик"
+  },
+  {
+    "word": "талаҡ",
+    "description": "селезёнка"
+  },
+  {
+    "word": "рәсем",
+    "description": "рисунок"
+  },
+  {
+    "word": "тамаҡ",
+    "description": "горло"
+  },
+  {
+    "word": "рәнек",
+    "description": "двуличие, лицемерие"
+  },
+  {
+    "word": "тапам",
+    "description": "вытаптываемый"
+  },
+  {
+    "word": "рәсүл",
+    "description": "илсе, пәйғәмбәр"
+  },
+  {
+    "word": "тараҡ",
+    "description": "гребень"
+  },
+  {
+    "word": "типаж",
+    "description": "и. ҡар. тип"
+  },
+  {
+    "word": "рәғем",
+    "description": "ғәр. и. иҫк. кит. ҡар. нәфрәт"
+  },
+  {
+    "word": "томаҡ",
+    "description": "затычка; пробка; засор"
+  },
+  {
+    "word": "рәүиз",
+    "description": "ревизия"
+  },
+  {
+    "word": "тораҡ",
+    "description": "стойбище"
+  },
+  {
+    "word": "рөбөғ",
+    "description": "четверть"
+  },
+  {
+    "word": "тотам",
+    "description": "прядь"
+  },
+  {
+    "word": "сабый",
+    "description": "малыш"
+  },
+  {
+    "word": "тоҙаҡ",
+    "description": "ловушка"
+  },
+  {
+    "word": "сабым",
+    "description": "укос"
+  },
+  {
+    "word": "тулаҡ",
+    "description": "высушенная без выделки шкура домашних животных"
+  },
+  {
+    "word": "сахиб",
+    "description": "владелец"
+  },
+  {
+    "word": "тутай",
+    "description": "младшая золовка"
+  },
+  {
+    "word": "сыбыҡ",
+    "description": "прут"
+  },
+  {
+    "word": "туғай",
+    "description": "луг"
+  },
+  {
+    "word": "сүбәк",
+    "description": "пакля"
+  },
+  {
+    "word": "туҡал",
+    "description": "безрогий"
+  },
+  {
+    "word": "сәкей",
+    "description": "разновидность мелкого степного суслика"
+  },
+  {
+    "word": "уймаҡ",
+    "description": "напёрсток"
+  },
+  {
+    "word": "сәпәк",
+    "description": "и. диал. ҡар. сәпәмә"
+  },
+  {
+    "word": "тыраж",
+    "description": "дрон"
+  },
+  {
+    "word": "сәмүм",
+    "description": "самум"
+  },
+  {
+    "word": "уйпаҙ",
+    "description": "и. диал. ҡар. уйпат"
+  },
+  {
+    "word": "сәрүи",
+    "description": "грациозный, стройный"
+  },
+  {
+    "word": "уртаҡ",
+    "description": "общий"
+  },
+  {
+    "word": "сәсәк",
+    "description": "оспа"
+  },
+  {
+    "word": "уҫмаҡ",
+    "description": "глубокая рана"
+  },
+  {
+    "word": "сәүек",
+    "description": "маленькая, низкорослая собака"
+  },
+  {
+    "word": "услам",
+    "description": "клок"
+  },
+  {
+    "word": "тубыҡ",
+    "description": "колено"
+  },
+  {
+    "word": "фараз",
+    "description": "предположение"
+  },
+  {
+    "word": "тәнәй",
+    "description": "младенец, малютка"
+  },
+  {
+    "word": "фираҡ",
+    "description": "разлука"
+  },
+  {
+    "word": "тәлге",
+    "description": "каша из саранок"
+  },
+  {
+    "word": "хоҙай",
+    "description": "бог"
+  },
+  {
+    "word": "тәпке",
+    "description": "мотыга"
+  },
+  {
+    "word": "хираж",
+    "description": "неожиданная прибыль"
+  },
+  {
+    "word": "тәпәй",
+    "description": "лапа"
+  },
+  {
+    "word": "шимал",
+    "description": "север"
+  },
+  {
+    "word": "тәтем",
+    "description": "бутень Прескотта"
+  },
+  {
+    "word": "ырмаҡ",
+    "description": "и. ҡар. ҡасау"
+  },
+  {
+    "word": "тәтәй",
+    "description": "игрушка"
+  },
+  {
+    "word": "ырғаҡ",
+    "description": "крючок"
+  },
+  {
+    "word": "тәңре",
+    "description": "бог, всевышний"
+  },
+  {
+    "word": "ыңғай",
+    "description": "положительный"
+  },
+  {
+    "word": "төбәк",
+    "description": "местность"
+  },
+  {
+    "word": "юртаҡ",
+    "description": "рысак"
+  },
+  {
+    "word": "төбәл",
+    "description": "стан для изготовления вводов"
+  },
+  {
+    "word": "япраҡ",
+    "description": "лист"
+  },
+  {
+    "word": "фәһем",
+    "description": "разум"
+  },
+  {
+    "word": "ярмаҡ",
+    "description": "мелкая монета"
+  },
+  {
+    "word": "фәләк",
+    "description": "дoля, судьба, рок"
+  },
+  {
+    "word": "ярҙам",
+    "description": "помощь"
+  },
+  {
+    "word": "хәлеғ",
+    "description": "разлука, расставание"
+  },
+  {
+    "word": "ярғаҡ",
+    "description": "затверделая шкура"
+  },
+  {
+    "word": "ҡабым",
+    "description": "кусок"
+  },
+  {
+    "word": "хәләл",
+    "description": "честный"
+  },
+  {
+    "word": "ғизам",
+    "description": "бөйөклөк"
+  },
+  {
+    "word": "ҡабыҡ",
+    "description": "шелуха"
+  },
+  {
+    "word": "хәдим",
+    "description": "ҡар. хадим"
+  },
+  {
+    "word": "ҡалаҡ",
+    "description": "ложка"
+  },
+  {
+    "word": "хәмед",
+    "description": "благодарность"
+  },
+  {
+    "word": "ҡапаҡ",
+    "description": "большеротый (о человеке)"
+  },
+  {
+    "word": "хәмел",
+    "description": "беременность"
+  },
+  {
+    "word": "ҡараҡ",
+    "description": "вор"
+  },
+  {
+    "word": "ҡасаҡ",
+    "description": "беженец"
+  },
+  {
+    "word": "хәрез",
+    "description": "возможность"
+  },
+  {
+    "word": "ҡауаҡ",
+    "description": "перхоть"
+  },
+  {
+    "word": "хәсәд",
+    "description": "зависть"
+  },
+  {
+    "word": "ҡаҙаҡ",
+    "description": "гвоздь"
+  },
+  {
+    "word": "хәтем",
+    "description": "Прочтение Корана"
+  },
+  {
+    "word": "ҡаҡаҡ",
+    "description": "гусь"
+  },
+  {
+    "word": "шәкәй",
+    "description": "и. диал. ҡар. бәкәл"
+  },
+  {
+    "word": "ҡолаҡ",
+    "description": "ухо"
+  },
+  {
+    "word": "шәкел",
+    "description": "вид"
+  },
+  {
+    "word": "ҡалай",
+    "description": "жесть"
+  },
+  {
+    "word": "шәреҡ",
+    "description": "восток"
+  },
+  {
+    "word": "ҡатай",
+    "description": "катай"
+  },
+  {
+    "word": "шәриҡ",
+    "description": "компаньон, партнёр; товарищ"
+  },
+  {
+    "word": "ҡомай",
+    "description": "глиняный горшок"
+  },
+  {
+    "word": "шәкәл",
+    "description": "то же, что бәкәл"
+  },
+  {
+    "word": "ҡомаҡ",
+    "description": "крыса"
+  },
+  {
+    "word": "шәлше",
+    "description": "копна из снопов на конусообразных жердях"
+  },
+  {
+    "word": "ҡораҡ",
+    "description": "и. диал. ҡар. ҡорама"
+  },
+  {
+    "word": "шәмбе",
+    "description": "суббота"
+  },
+  {
+    "word": "ҡосаҡ",
+    "description": "объятие"
+  },
+  {
+    "word": "шәмсе",
+    "description": "солнце"
+  },
+  {
+    "word": "ҡорал",
+    "description": "инструмент"
+  },
+  {
+    "word": "шәфәҡ",
+    "description": "заря"
+  },
+  {
+    "word": "һалам",
+    "description": "солома"
+  },
+  {
+    "word": "шәрғе",
+    "description": "ғәр. иҫк. ҡар. шәриғәт"
+  },
+  {
+    "word": "һамаҡ",
+    "description": "заговор"
+  },
+  {
+    "word": "шәшке",
+    "description": "норка"
+  },
+  {
+    "word": "һамай",
+    "description": "висок"
+  },
+  {
+    "word": "шәүеҡ",
+    "description": "воодушевление"
+  },
+  {
+    "word": "һанай",
+    "description": "простой, обычный (о луке)"
+  },
+  {
+    "word": "ыслуб",
+    "description": "манера"
+  },
+  {
+    "word": "һарай",
+    "description": "дворец"
+  },
+  {
+    "word": "эзбиз",
+    "description": "известь"
+  },
+  {
+    "word": "һағаҡ",
+    "description": "бородка топора"
+  },
+  {
+    "word": "ҡибла",
+    "description": "южный"
+  },
+  {
+    "word": "һаҙай",
+    "description": "доля, причитающийся дар; воздаяние"
+  },
+  {
+    "word": "ҡубыҙ",
+    "description": "кубыз"
+  },
+  {
+    "word": "һаҙаҡ",
+    "description": "колчан"
+  },
+  {
+    "word": "ғәзәл",
+    "description": "газель"
+  },
+  {
+    "word": "ҡунаҡ",
+    "description": "гость"
+  },
+  {
+    "word": "бакуй",
+    "description": "ҡайырым"
+  },
+  {
+    "word": "ғәмәл",
+    "description": "действие"
+  },
+  {
+    "word": "ҡоһай",
+    "description": "сажень"
+  },
+  {
+    "word": "балыҡ",
+    "description": "рыба"
+  },
+  {
+    "word": "ҡурай",
+    "description": "курай обыкновенный"
+  },
+  {
+    "word": "балта",
+    "description": "топор"
+  },
+  {
+    "word": "ҡураҡ",
+    "description": "породистый жеребец-производитель"
+  },
+  {
+    "word": "балға",
+    "description": "молот"
+  },
+  {
+    "word": "ҡушаҡ",
+    "description": "пояс"
+  },
+  {
+    "word": "барса",
+    "description": "парча"
+  },
+  {
+    "word": "ҡуҙаҡ",
+    "description": "стручок"
+  },
+  {
+    "word": "батша",
+    "description": "царь"
+  },
+  {
+    "word": "ҡыраз",
+    "description": "вершина, гребень"
+  },
+  {
+    "word": "бағым",
+    "description": "ворожба, гадание"
+  },
+  {
+    "word": "ҡытай",
+    "description": "вышитый узор в виде ожерелья"
+  },
+  {
+    "word": "баҡма",
+    "description": "иждивенец"
+  },
+  {
+    "word": "ҡыуаҡ",
+    "description": "куст"
+  },
+  {
+    "word": "баҡра",
+    "description": "куколь"
+  },
+  {
+    "word": "ҡыҫал",
+    "description": "разновидность круглых глистов"
+  },
+  {
+    "word": "баҡса",
+    "description": "сад"
+  },
+  {
+    "word": "ҡәүем",
+    "description": "род"
+  },
+  {
+    "word": "баҡта",
+    "description": "шерсть"
+  },
+  {
+    "word": "һилал",
+    "description": "молодая луна"
+  },
+  {
+    "word": "баҫма",
+    "description": "издание"
+  },
+  {
+    "word": "үзбәк",
+    "description": "узбек"
+  },
+  {
+    "word": "һаҡал",
+    "description": "борода"
+  },
+  {
+    "word": "белек",
+    "description": "глубокий ум"
+  },
+  {
+    "word": "бейем",
+    "description": "госпожа"
+  },
+  {
+    "word": "һәнәк",
+    "description": "вилы"
+  },
+  {
+    "word": "белем",
+    "description": "знание"
+  },
+  {
+    "word": "һупай",
+    "description": "сыч мохноногий"
+  },
+  {
+    "word": "беләк",
+    "description": "предплечье"
+  },
+  {
+    "word": "һәзел",
+    "description": "мәрәкәле"
+  },
+  {
+    "word": "бесәй",
+    "description": "кошка"
+  },
+  {
+    "word": "һәжүи",
+    "description": "сатирический"
+  },
+  {
+    "word": "бизек",
+    "description": "Единица измерения, равная длине ступни, которая учитывается во время игры в бабки для решения вопроса о выигрыше"
+  },
+  {
+    "word": "әжрам",
+    "description": "күк есемдәре, планеталар"
+  },
+  {
+    "word": "бикре",
+    "description": "осётр"
+  },
+  {
+    "word": "әсхәб",
+    "description": "асхаб"
+  },
+  {
+    "word": "билге",
+    "description": "метка"
+  },
+  {
+    "word": "әғмал",
+    "description": "см. әғмал"
+  },
+  {
+    "word": "бирем",
+    "description": "дача"
+  },
+  {
+    "word": "әхлаҡ",
+    "description": "мораль"
+  },
+  {
+    "word": "битәл",
+    "description": "мотня"
+  },
+  {
+    "word": "әһрам",
+    "description": "пирамида"
+  },
+  {
+    "word": "бишек",
+    "description": "колыбель"
+  },
+  {
+    "word": "өмбөл",
+    "description": "омут"
+  },
+  {
+    "word": "бишәй",
+    "description": "бишей"
+  },
+  {
+    "word": "абаға",
+    "description": "папоротник"
+  },
+  {
+    "word": "биҙәк",
+    "description": "узор"
+  },
+  {
+    "word": "абзый",
+    "description": "«Дядя»"
+  },
+  {
+    "word": "биҙәл",
+    "description": "авторитет"
+  },
+  {
+    "word": "абуна",
+    "description": "абонемент"
+  },
+  {
+    "word": "бойом",
+    "description": "действительность"
+  },
+  {
+    "word": "аласа",
+    "description": "полосатая холстина"
+  },
+  {
+    "word": "босоҡ",
+    "description": "бадья"
+  },
+  {
+    "word": "абруй",
+    "description": "авторитет"
+  },
+  {
+    "word": "бойҙа",
+    "description": "большой нож, кинжал"
+  },
+  {
+    "word": "айлыҡ",
+    "description": "месячник"
+  },
+  {
+    "word": "борма",
+    "description": "извилина"
+  },
+  {
+    "word": "айсыҡ",
+    "description": "название узора в виде полумесяца"
+  },
+  {
+    "word": "ботса",
+    "description": "и. диал. ҡар. ботлоҡ"
+  },
+  {
+    "word": "алдыҡ",
+    "description": "липовый"
+  },
+  {
+    "word": "бурса",
+    "description": "торец"
+  },
+  {
+    "word": "андыҙ",
+    "description": "девясил высокий"
+  },
+  {
+    "word": "бутҡа",
+    "description": "каша"
+  },
+  {
+    "word": "арсый",
+    "description": "личная охрана"
+  },
+  {
+    "word": "быйма",
+    "description": "валенки"
+  },
+  {
+    "word": "аслыҡ",
+    "description": "голодный"
+  },
+  {
+    "word": "быума",
+    "description": "эпилепсия"
+  },
+  {
+    "word": "ашлыҡ",
+    "description": "зерно"
+  },
+  {
+    "word": "быяла",
+    "description": "стекло"
+  },
+  {
+    "word": "алъяҡ",
+    "description": "и. диал. ҡар. ал"
+  },
+  {
+    "word": "бурыл",
+    "description": "чалый"
+  },
+  {
+    "word": "алаша",
+    "description": "мерин"
+  },
+  {
+    "word": "бурыҡ",
+    "description": "корневище рогоза"
+  },
+  {
+    "word": "апара",
+    "description": "болтушка из отходов"
+  },
+  {
+    "word": "бутый",
+    "description": "боты"
+  },
+  {
+    "word": "арата",
+    "description": "поперечина"
+  },
+  {
+    "word": "бығым",
+    "description": "ложное ребро"
+  },
+  {
+    "word": "аръяҡ",
+    "description": "противоположная сторона"
+  },
+  {
+    "word": "бүлбе",
+    "description": "клубень"
+  },
+  {
+    "word": "атама",
+    "description": "название"
+  },
+  {
+    "word": "бүлге",
+    "description": "перегородка"
+  },
+  {
+    "word": "атҡый",
+    "description": "вид стрелы с берестяными крылышками"
+  },
+  {
+    "word": "бүлек",
+    "description": "глава"
+  },
+  {
+    "word": "ағала",
+    "description": "Один из видов утки"
+  },
+  {
+    "word": "бүлем",
+    "description": "участок"
+  },
+  {
+    "word": "ағуна",
+    "description": "белая куропатка"
+  },
+  {
+    "word": "бүләк",
+    "description": "дар"
+  },
+  {
+    "word": "ағута",
+    "description": "чиновник"
+  },
+  {
+    "word": "бүгәй",
+    "description": "богатырского телосложения"
+  },
+  {
+    "word": "аҙлыҡ",
+    "description": "малое количество"
+  },
+  {
+    "word": "бүрек",
+    "description": "шапка"
+  },
+  {
+    "word": "аҡана",
+    "description": "осока просяная"
+  },
+  {
+    "word": "бөгөл",
+    "description": "изгиб"
+  },
+  {
+    "word": "аҡлыҡ",
+    "description": "белизна"
+  },
+  {
+    "word": "бөжәк",
+    "description": "насекомое"
+  },
+  {
+    "word": "аҫлыҡ",
+    "description": "подставка"
+  },
+  {
+    "word": "бөгөм",
+    "description": "диал. ҡар. бөкләм"
+  },
+  {
+    "word": "елдәк",
+    "description": "Ельдяк"
+  },
+  {
+    "word": "бөрөж",
+    "description": "знак зодиака"
+  },
+  {
+    "word": "еллек",
+    "description": "поддувало"
+  },
+  {
+    "word": "бөтөм",
+    "description": "концовка"
+  },
+  {
+    "word": "емдек",
+    "description": "дохлятина (о хилой, тощей скотине)"
+  },
+  {
+    "word": "бөрөз",
+    "description": "бортевая пешня"
+  },
+  {
+    "word": "емтек",
+    "description": "мертвечина"
+  },
+  {
+    "word": "вағиз",
+    "description": "ғәр. и. ҡар. вәғиз"
+  },
+  {
+    "word": "енсек",
+    "description": "голень"
+  },
+  {
+    "word": "дайса",
+    "description": "дача iv"
+  },
+  {
+    "word": "ентек",
+    "description": "доскональность"
+  },
+  {
+    "word": "дауыл",
+    "description": "шторм"
+  },
+  {
+    "word": "еҙнәй",
+    "description": "дядя"
+  },
+  {
+    "word": "димсе",
+    "description": "подстрекатель"
+  },
+  {
+    "word": "ерлек",
+    "description": "фон"
+  },
+  {
+    "word": "динсе",
+    "description": "проповедник какой-л. религии"
+  },
+  {
+    "word": "еңгәй",
+    "description": "и. ҡар. еңгә"
+  },
+  {
+    "word": "идара",
+    "description": "правление"
+  },
+  {
+    "word": "жөнүд",
+    "description": "армейский"
+  },
+  {
+    "word": "икмәк",
+    "description": "хлеб"
+  },
+  {
+    "word": "зарба",
+    "description": "беда"
+  },
+  {
+    "word": "имсәк",
+    "description": "грудь"
+  },
+  {
+    "word": "зауыҡ",
+    "description": "вкус"
+  },
+  {
+    "word": "индек",
+    "description": "(см.\"ингән\")"
+  },
+  {
+    "word": "зелпе",
+    "description": "бересклет бородавчатый"
+  },
+  {
+    "word": "имана",
+    "description": "надельный"
+  },
+  {
+    "word": "ирада",
+    "description": "добрая воля"
+  },
+  {
+    "word": "золом",
+    "description": "тирания"
+  },
+  {
+    "word": "инжил",
+    "description": "евангелие"
+  },
+  {
+    "word": "манма",
+    "description": "раствор для смачивания шкур"
+  },
+  {
+    "word": "инлек",
+    "description": "вход"
+  },
+  {
+    "word": "матса",
+    "description": "балка"
+  },
+  {
+    "word": "ирлек",
+    "description": "мужество"
+  },
+  {
+    "word": "манса",
+    "description": "хлебина"
+  },
+  {
+    "word": "иртәк",
+    "description": "героическое сказание"
+  },
+  {
+    "word": "маска",
+    "description": "золотая маска"
+  },
+  {
+    "word": "истәк",
+    "description": "истяк"
+  },
+  {
+    "word": "мамыҡ",
+    "description": "вата"
+  },
+  {
+    "word": "ихата",
+    "description": "двор"
+  },
+  {
+    "word": "манси",
+    "description": "мансийский"
+  },
+  {
+    "word": "ишара",
+    "description": "жест"
+  },
+  {
+    "word": "метод",
+    "description": "и. ҡар. алым"
+  },
+  {
+    "word": "ишкәк",
+    "description": "весло"
+  },
+  {
+    "word": "мауыҡ",
+    "description": "одержимый"
+  },
+  {
+    "word": "иштәк",
+    "description": "и. диал. ҡар. истәк"
+  },
+  {
+    "word": "моҙға",
+    "description": "роевня"
+  },
+  {
+    "word": "иңкел",
+    "description": "и. диал. ҡар. иңкеүлек"
+  },
+  {
+    "word": "маңҡа",
+    "description": "сап"
+  },
+  {
+    "word": "йолом",
+    "description": "выкуп"
+  },
+  {
+    "word": "меңле",
+    "description": "и. этн. ҡар. мең"
+  },
+  {
+    "word": "йотом",
+    "description": "глотаемый"
+  },
+  {
+    "word": "милек",
+    "description": "имущество"
+  },
+  {
+    "word": "йоҫоҡ",
+    "description": "вид"
+  },
+  {
+    "word": "меңсе",
+    "description": "полковник"
+  },
+  {
+    "word": "йылға",
+    "description": "река"
+  },
+  {
+    "word": "мисек",
+    "description": "мускус"
+  },
+  {
+    "word": "йырҙа",
+    "description": "ложе"
+  },
+  {
+    "word": "муйыл",
+    "description": "черёмуха"
+  },
+  {
+    "word": "йөрәк",
+    "description": "сердце"
+  },
+  {
+    "word": "мунда",
+    "description": "холка"
+  },
+  {
+    "word": "йөрөм",
+    "description": "ход"
+  },
+  {
+    "word": "мунса",
+    "description": "баня"
+  },
+  {
+    "word": "йүтәл",
+    "description": "кашель"
+  },
+  {
+    "word": "мурҙа",
+    "description": "и. этн. диал. ҡар. ылаш"
+  },
+  {
+    "word": "йөҙөк",
+    "description": "кольцо"
+  },
+  {
+    "word": "муҡса",
+    "description": "и. диал. ҡар. моҡсай"
+  },
+  {
+    "word": "йөҙөм",
+    "description": "виноград"
+  },
+  {
+    "word": "морзе",
+    "description": "Морзе, морзянка"
+  },
+  {
+    "word": "лайла",
+    "description": "слизь"
+  },
+  {
+    "word": "мусим",
+    "description": "завещатель"
+  },
+  {
+    "word": "лента",
+    "description": "и. ҡар. таҫма"
+  },
+  {
+    "word": "муҙый",
+    "description": "насекомые, распространяющие инфекцию"
+  },
+  {
+    "word": "литва",
+    "description": "литовский"
+  },
+  {
+    "word": "мыйыҡ",
+    "description": "усы"
+  },
+  {
+    "word": "логик",
+    "description": "логический"
+  },
+  {
+    "word": "мырҙа",
+    "description": "мурза"
+  },
+  {
+    "word": "мөрәҙ",
+    "description": "муравьиная кислота"
+  },
+  {
+    "word": "найҙа",
+    "description": "копьё, пика"
+  },
+  {
+    "word": "мөгөҙ",
+    "description": "рог"
+  },
+  {
+    "word": "нарыҡ",
+    "description": "оценка"
+  },
+  {
+    "word": "мөсәй",
+    "description": "Доля, кусок мяса, вручаемый во время угощения участникам коллективной помощи"
+  },
+  {
+    "word": "наряд",
+    "description": "и. ҡар. күрһәтмә"
+  },
+  {
+    "word": "мөфти",
+    "description": "глава мусульманского духовенства"
+  },
+  {
+    "word": "парса",
+    "description": "парча"
+  },
+  {
+    "word": "мөсәл",
+    "description": "двенадцатилетний животный цикл"
+  },
+  {
+    "word": "нуҡта",
+    "description": "недоуздок"
+  },
+  {
+    "word": "рафиҡ",
+    "description": "друг"
+  },
+  {
+    "word": "нигеҙ",
+    "description": "фундамент"
+  },
+  {
+    "word": "паста",
+    "description": "и. һөйл. ҡар. стержень"
+  },
+  {
+    "word": "нотоҡ",
+    "description": "артикуляция"
+  },
+  {
+    "word": "рауза",
+    "description": "гөл баҡсаһы"
+  },
+  {
+    "word": "нөфүҙ",
+    "description": "авторитет"
+  },
+  {
+    "word": "салиҡ",
+    "description": "приверженец религии, исповедующий религию"
+  },
+  {
+    "word": "салма",
+    "description": "чалма"
+  },
+  {
+    "word": "оброк",
+    "description": "и. тар. ҡар. яһаҡ"
+  },
+  {
+    "word": "самиғ",
+    "description": "слушатель (вольнослушатель) в учебном заведении"
+  },
+  {
+    "word": "тайра",
+    "description": "родословная"
+  },
+  {
+    "word": "орлоҡ",
+    "description": "семя"
+  },
+  {
+    "word": "тайса",
+    "description": "двухгодовалый бык"
+  },
+  {
+    "word": "талта",
+    "description": "и. диал. ҡар. ҡеүәт"
+  },
+  {
+    "word": "орсоҡ",
+    "description": "веретено"
+  },
+  {
+    "word": "тамға",
+    "description": "тавро"
+  },
+  {
+    "word": "ослоҡ",
+    "description": "конечность"
+  },
+  {
+    "word": "танса",
+    "description": "танец"
+  },
+  {
+    "word": "остоҡ",
+    "description": "конец, кончик"
+  },
+  {
+    "word": "олата",
+    "description": "глава племени"
+  },
+  {
+    "word": "тамуҡ",
+    "description": "ад"
+  },
+  {
+    "word": "опека",
+    "description": "забота, попечение"
+  },
+  {
+    "word": "талыҡ",
+    "description": "шина"
+  },
+  {
+    "word": "пемза",
+    "description": "и. ҡар. күбекташ"
+  },
+  {
+    "word": "тариҡ",
+    "description": "дорога"
+  },
+  {
+    "word": "остяк",
+    "description": "остяки"
+  },
+  {
+    "word": "тарма",
+    "description": "конопля"
+  },
+  {
+    "word": "тапма",
+    "description": "лихорадка"
+  },
+  {
+    "word": "таҡта",
+    "description": "доска"
+  },
+  {
+    "word": "ризыҡ",
+    "description": "еда"
+  },
+  {
+    "word": "таҫма",
+    "description": "лента"
+  },
+  {
+    "word": "поляк",
+    "description": "польский"
+  },
+  {
+    "word": "тарыз",
+    "description": "манера, способ"
+  },
+  {
+    "word": "права",
+    "description": "и. һөйл. ҡар. таныҡлыҡ"
+  },
+  {
+    "word": "тауыҡ",
+    "description": "курица"
+  },
+  {
+    "word": "рейка",
+    "description": "диал. ҡар. ҡойма"
+  },
+  {
+    "word": "таҫыл",
+    "description": "ловкость"
+  },
+  {
+    "word": "рупий",
+    "description": "рупия"
+  },
+  {
+    "word": "таһыл",
+    "description": "хватка"
+  },
+  {
+    "word": "рюмка",
+    "description": "единица измерения спиртных напитков"
+  },
+  {
+    "word": "тейәк",
+    "description": "валёк"
+  },
+  {
+    "word": "сатра",
+    "description": "вершина"
+  },
+  {
+    "word": "телем",
+    "description": "ломоть"
+  },
+  {
+    "word": "сауыл",
+    "description": "одинокая большая береза"
+  },
+  {
+    "word": "телсе",
+    "description": "языковед"
+  },
+  {
+    "word": "сауға",
+    "description": "дар охотника первому встречному"
+  },
+  {
+    "word": "теләк",
+    "description": "желание"
+  },
+  {
+    "word": "сауҙа",
+    "description": "торговля"
+  },
+  {
+    "word": "терек",
+    "description": "скот"
+  },
+  {
+    "word": "сауҡа",
+    "description": "молодая берёза"
+  },
+  {
+    "word": "терпе",
+    "description": "ёж"
+  },
+  {
+    "word": "сахил",
+    "description": "берег большой реки"
+  },
+  {
+    "word": "терәк",
+    "description": "опора"
+  },
+  {
+    "word": "сахра",
+    "description": "ғәр. и. ҡар. сәхрә"
+  },
+  {
+    "word": "теҙем",
+    "description": "цепь"
+  },
+  {
+    "word": "сағра",
+    "description": "труднопроходимые горнолесные участки"
+  },
+  {
+    "word": "типке",
+    "description": "упор"
+  },
+  {
+    "word": "саҡма",
+    "description": "кремнёвый"
+  },
+  {
+    "word": "тирәк",
+    "description": "тополь"
+  },
+  {
+    "word": "саҡса",
+    "description": "патронташ"
+  },
+  {
+    "word": "титек",
+    "description": "защёлка"
+  },
+  {
+    "word": "сбруй",
+    "description": "сбруя"
+  },
+  {
+    "word": "тишек",
+    "description": "дырявый"
+  },
+  {
+    "word": "сағыл",
+    "description": "косогор"
+  },
+  {
+    "word": "торба",
+    "description": "труба"
+  },
+  {
+    "word": "сағым",
+    "description": "мираж"
+  },
+  {
+    "word": "торма",
+    "description": "не стой"
+  },
+  {
+    "word": "селек",
+    "description": "чилига"
+  },
+  {
+    "word": "торна",
+    "description": "журавль"
+  },
+  {
+    "word": "селем",
+    "description": "трубка"
+  },
+  {
+    "word": "торҡа",
+    "description": "шлем"
+  },
+  {
+    "word": "сепей",
+    "description": "цыпки"
+  },
+  {
+    "word": "тойоҡ",
+    "description": "топь, топкое место"
+  },
+  {
+    "word": "сирса",
+    "description": "десна"
+  },
+  {
+    "word": "толом",
+    "description": "коса"
+  },
+  {
+    "word": "серге",
+    "description": "чепрак"
+  },
+  {
+    "word": "толҡа",
+    "description": "душевный покой, успокоение"
+  },
+  {
+    "word": "серем",
+    "description": "дрёма, дремота"
+  },
+  {
+    "word": "томма",
+    "description": "полое дерево"
+  },
+  {
+    "word": "серәй",
+    "description": "см. селбәрә"
+  },
+  {
+    "word": "тотҡа",
+    "description": "ручка"
+  },
+  {
+    "word": "силәк",
+    "description": "бадья"
+  },
+  {
+    "word": "туйра",
+    "description": "дуб"
+  },
+  {
+    "word": "синке",
+    "description": "синька"
+  },
+  {
+    "word": "тулма",
+    "description": "отёк, отечность"
+  },
+  {
+    "word": "сирек",
+    "description": "четверть"
+  },
+  {
+    "word": "тулға",
+    "description": "см. өстаған"
+  },
+  {
+    "word": "ситек",
+    "description": "ичиги"
+  },
+  {
+    "word": "тоноҡ",
+    "description": "тусклый"
+  },
+  {
+    "word": "ситса",
+    "description": "ситец"
+  },
+  {
+    "word": "тороҡ",
+    "description": "туловище"
+  },
+  {
+    "word": "тиҙәк",
+    "description": "навоз"
+  },
+  {
+    "word": "тиҫбе",
+    "description": "чётки"
+  },
+  {
+    "word": "соңҡа",
+    "description": "затылок"
+  },
+  {
+    "word": "туйыҙ",
+    "description": "диал. см. туҙ"
+  },
+  {
+    "word": "сырға",
+    "description": "бритва"
+  },
+  {
+    "word": "тутыҡ",
+    "description": "ржавчина"
+  },
+  {
+    "word": "сыҡта",
+    "description": "узда, недоуздок жеребенка"
+  },
+  {
+    "word": "тупый",
+    "description": "бутень"
+  },
+  {
+    "word": "сытра",
+    "description": "Женское украшение из золота и серебра с драгоценным камнем посередине"
+  },
+  {
+    "word": "тоҡол",
+    "description": "репица"
+  },
+  {
+    "word": "тыжым",
+    "description": "основная растягивающая веревка сети"
+  },
+  {
+    "word": "сумса",
+    "description": "и. диал. ҡар. самбуса"
+  },
+  {
+    "word": "тызый",
+    "description": "и. диал. ҡар. бал ҡорто"
+  },
+  {
+    "word": "сусҡа",
+    "description": "свинья"
+  },
+  {
+    "word": "тырыз",
+    "description": "короб из бересты"
+  },
+  {
+    "word": "солоҡ",
+    "description": "борть"
+  },
+  {
+    "word": "тупһа",
+    "description": "порог"
+  },
+  {
+    "word": "сыйыҡ",
+    "description": "изъян"
+  },
+  {
+    "word": "турта",
+    "description": "пенка на бульоне, топленом масле"
+  },
+  {
+    "word": "сығым",
+    "description": "затрата"
+  },
+  {
+    "word": "сыҙыҡ",
+    "description": "и. диал. ҡар. һыҙыҡ"
+  },
+  {
+    "word": "тоҡом",
+    "description": "потомок"
+  },
+  {
+    "word": "тырма",
+    "description": "грабли"
+  },
+  {
+    "word": "суфый",
+    "description": "монахиня"
+  },
+  {
+    "word": "тыума",
+    "description": "внебрачный"
+  },
+  {
+    "word": "сүрәк",
+    "description": "чурек"
+  },
+  {
+    "word": "тыуса",
+    "description": "двухгодовалая корова или коза не давшая приплода)"
+  },
+  {
+    "word": "сөрөк",
+    "description": "гнилушка"
+  },
+  {
+    "word": "түтәй",
+    "description": "и. диал. ҡар. апай"
+  },
+  {
+    "word": "сөнни",
+    "description": "суннит"
+  },
+  {
+    "word": "түшәк",
+    "description": "постель"
+  },
+  {
+    "word": "сөрөм",
+    "description": "щурёнок"
+  },
+  {
+    "word": "түтәл",
+    "description": "грядка"
+  },
+  {
+    "word": "сөсөк",
+    "description": "камбий"
+  },
+  {
+    "word": "түҙем",
+    "description": "терпение"
+  },
+  {
+    "word": "сыңға",
+    "description": "металлическое кольцо"
+  },
+  {
+    "word": "төйәк",
+    "description": "пристанище"
+  },
+  {
+    "word": "фазыл",
+    "description": "белемле, аҡыллы"
+  },
+  {
+    "word": "төлөк",
+    "description": "гнездо"
+  },
+  {
+    "word": "фарыз",
+    "description": "безусловный"
+  },
+  {
+    "word": "төнәк",
+    "description": "шесток"
+  },
+  {
+    "word": "файҙа",
+    "description": "польза"
+  },
+  {
+    "word": "төрөк",
+    "description": "турецкий"
+  },
+  {
+    "word": "фасыл",
+    "description": "время года"
+  },
+  {
+    "word": "төшөм",
+    "description": "доход"
+  },
+  {
+    "word": "фалиж",
+    "description": "паралич"
+  },
+  {
+    "word": "уйҙыҡ",
+    "description": "впадина"
+  },
+  {
+    "word": "хадим",
+    "description": "работник"
+  },
+  {
+    "word": "урама",
+    "description": "диал. ҡар. таҫтар"
+  },
+  {
+    "word": "хаким",
+    "description": "правитель"
+  },
+  {
+    "word": "урата",
+    "description": "округа, окрестность"
+  },
+  {
+    "word": "халыҡ",
+    "description": "народ"
+  },
+  {
+    "word": "ураҙа",
+    "description": "пост"
+  },
+  {
+    "word": "халиҡ",
+    "description": "создатель, творец"
+  },
+  {
+    "word": "уйҡыл",
+    "description": "ложбина"
+  },
+  {
+    "word": "унлыҡ",
+    "description": "десятка"
+  },
+  {
+    "word": "харҙа",
+    "description": "харза, желтогрудая куница, уссурийская куница"
+  },
+  {
+    "word": "утлыҡ",
+    "description": "ясельный"
+  },
+  {
+    "word": "хасил",
+    "description": "итог"
+  },
+  {
+    "word": "феләк",
+    "description": "и. һөйл. ҡар. фляга"
+  },
+  {
+    "word": "хауыз",
+    "description": "бассейн"
+  },
+  {
+    "word": "физик",
+    "description": "физический"
+  },
+  {
+    "word": "шайыҡ",
+    "description": "слюна"
+  },
+  {
+    "word": "фиорд",
+    "description": "фиoрд"
+  },
+  {
+    "word": "шапка",
+    "description": "и. махс. ҡар. баш"
+  },
+  {
+    "word": "фикһе",
+    "description": "фикх"
+  },
+  {
+    "word": "шаҙра",
+    "description": "рябой, щербатый"
+  },
+  {
+    "word": "химик",
+    "description": "химический"
+  },
+  {
+    "word": "шаҡма",
+    "description": "кольцо на ручке ножа"
+  },
+  {
+    "word": "фиғел",
+    "description": "1. Дело, движение; 2. Поступок, характер"
+  },
+  {
+    "word": "хафиз",
+    "description": "оберегающий"
+  },
+  {
+    "word": "шешек",
+    "description": "чирей"
+  },
+  {
+    "word": "холоҡ",
+    "description": "нрав"
+  },
+  {
+    "word": "шешке",
+    "description": "и. диал. ҡар. шешек"
+  },
+  {
+    "word": "хорей",
+    "description": "хорeй"
+  },
+  {
+    "word": "шешәк",
+    "description": "двухлетний, двухгодовалый"
+  },
+  {
+    "word": "хорда",
+    "description": "хoрда"
+  },
+  {
+    "word": "шикел",
+    "description": "внешность, наружность; вид, облик"
+  },
+  {
+    "word": "хохоҡ",
+    "description": "вид уток"
+  },
+  {
+    "word": "шилма",
+    "description": "плут, мошенник, пройдоха"
+  },
+  {
+    "word": "хоҡуҡ",
+    "description": "право"
+  },
+  {
+    "word": "шулпа",
+    "description": "бульон у ю-з, сев., с-з, зап. башкир"
+  },
+  {
+    "word": "хосул",
+    "description": "дохoд"
+  },
+  {
+    "word": "шытыҡ",
+    "description": "и. диал. ҡар шытым"
+  },
+  {
+    "word": "хөкөм",
+    "description": "приговор"
+  },
+  {
+    "word": "ширма",
+    "description": "прикрытие кого, чего (в каких-л. делах)"
+  },
+  {
+    "word": "ымлыҡ",
+    "description": "восклицание"
+  },
+  {
+    "word": "шыйҙа",
+    "description": "высокое безветвистое дерево"
+  },
+  {
+    "word": "ыҫлыҡ",
+    "description": "дымарь"
+  },
+  {
+    "word": "шөғөл",
+    "description": "занятие, дело"
+  },
+  {
+    "word": "ыжыҡа",
+    "description": "брюзга, ворчун"
+  },
+  {
+    "word": "юллыҡ",
+    "description": "дымоход"
+  },
+  {
+    "word": "ҡадим",
+    "description": "путник"
+  },
+  {
+    "word": "юҡлыҡ",
+    "description": "отрицание"
+  },
+  {
+    "word": "ҡайма",
+    "description": "кайма"
+  },
+  {
+    "word": "элмәк",
+    "description": "петля"
+  },
+  {
+    "word": "ҡазый",
+    "description": "кади"
+  },
+  {
+    "word": "эпоха",
+    "description": "и. ҡар. дәүер"
+  },
+  {
+    "word": "ҡайыҙ",
+    "description": "кора"
+  },
+  {
+    "word": "эслек",
+    "description": "подкладка"
+  },
+  {
+    "word": "ҡайыҡ",
+    "description": "лодка"
+  },
+  {
+    "word": "этлек",
+    "description": "вьюн"
+  },
+  {
+    "word": "ҡамыл",
+    "description": "жнивьё"
+  },
+  {
+    "word": "этаяҡ",
+    "description": "собачья миска"
+  },
+  {
+    "word": "ҡалта",
+    "description": "карман"
+  },
+  {
+    "word": "юрмый",
+    "description": "Название племени и рода башкир; юрмый"
+  },
+  {
+    "word": "ҡалға",
+    "description": "и. ҡар. ҡәлғә"
+  },
+  {
+    "word": "юҡһыл",
+    "description": "бедняк, беднота"
+  },
+  {
+    "word": "ҡамса",
+    "description": "хамсовый"
+  },
+  {
+    "word": "ялдым",
+    "description": "омут"
+  },
+  {
+    "word": "ҡамҡа",
+    "description": "камка"
+  },
+  {
+    "word": "ялҡыҡ",
+    "description": "желчь"
+  },
+  {
+    "word": "ҡапҡа",
+    "description": "ворота"
+  },
+  {
+    "word": "эшлек",
+    "description": "и. диал. ҡар. эш"
+  },
+  {
+    "word": "ҡарый",
+    "description": "Название родового подразделения башкир племени бурзян"
+  },
+  {
+    "word": "эҫкәк",
+    "description": "пинцет"
+  },
+  {
+    "word": "ҡасыд",
+    "description": "желание"
+  },
+  {
+    "word": "ҡатыҡ",
+    "description": "варенец"
+  },
+  {
+    "word": "ябаға",
+    "description": "жеребёнок"
+  },
+  {
+    "word": "ҡашыҡ",
+    "description": "поварёшка"
+  },
+  {
+    "word": "янаға",
+    "description": "и. диал. ҡар. ҡәйнеш"
+  },
+  {
+    "word": "ҡағыҙ",
+    "description": "бумага"
+  },
+  {
+    "word": "ҡарта",
+    "description": "прямая кишка лошади"
+  },
+  {
+    "word": "яптыҡ",
+    "description": "подготовка"
+  },
+  {
+    "word": "ҡарға",
+    "description": "ворона"
+  },
+  {
+    "word": "янсыҡ",
+    "description": "кисет"
+  },
+  {
+    "word": "ҡатил",
+    "description": "убийца"
+  },
+  {
+    "word": "ярлыҡ",
+    "description": "ярлык"
+  },
+  {
+    "word": "ҡашҡа",
+    "description": "лысина"
+  },
+  {
+    "word": "ярсыҡ",
+    "description": "осколок"
+  },
+  {
+    "word": "ҡаҙна",
+    "description": "казна"
+  },
+  {
+    "word": "янъял",
+    "description": "скандал"
+  },
+  {
+    "word": "ҡаҙыҡ",
+    "description": "кол"
+  },
+  {
+    "word": "ғосса",
+    "description": "горе"
+  },
+  {
+    "word": "ҡаҫыҡ",
+    "description": "пах"
+  },
+  {
+    "word": "ярһүҙ",
+    "description": "сердитая речь"
+  },
+  {
+    "word": "ҡаҡма",
+    "description": "ударный"
+  },
+  {
+    "word": "яулыҡ",
+    "description": "платок"
+  },
+  {
+    "word": "ҡаҫта",
+    "description": "злонамерение"
+  },
+  {
+    "word": "яҙлыҡ",
+    "description": "память"
+  },
+  {
+    "word": "ҡисса",
+    "description": "художественное произведение об историческом событии"
+  },
+  {
+    "word": "ҡитға",
+    "description": "континент"
+  },
+  {
+    "word": "яҫмыҡ",
+    "description": "чечевица"
+  },
+  {
+    "word": "ҡойма",
+    "description": "забор"
+  },
+  {
+    "word": "ғалим",
+    "description": "учёный"
+  },
+  {
+    "word": "ҡойҡа",
+    "description": "холодец"
+  },
+  {
+    "word": "яҫтыҡ",
+    "description": "перина"
+  },
+  {
+    "word": "ҡисем",
+    "description": "доля"
+  },
+  {
+    "word": "ғанҡа",
+    "description": "грифон"
+  },
+  {
+    "word": "ҡолоҡ",
+    "description": "кобыла (нежеребившаяся)"
+  },
+  {
+    "word": "ғамил",
+    "description": "агент"
+  },
+  {
+    "word": "ҡолға",
+    "description": "шест"
+  },
+  {
+    "word": "ғаруз",
+    "description": "аруд"
+  },
+  {
+    "word": "ҡомой",
+    "description": "Название одного из родовых подразделений башкир племени айле"
+  },
+  {
+    "word": "ғауға",
+    "description": "дебош"
+  },
+  {
+    "word": "ҡороҡ",
+    "description": "лассо"
+  },
+  {
+    "word": "ғаҡыл",
+    "description": "ум, разум, рассудок"
+  },
+  {
+    "word": "ҡотоҡ",
+    "description": "и. диал. ҡар. ҡоҙоҡ"
+  },
+  {
+    "word": "ғунса",
+    "description": "бутон"
+  },
+  {
+    "word": "ҡоҙоҡ",
+    "description": "колодец"
+  },
+  {
+    "word": "ғилем",
+    "description": "наука"
+  },
+  {
+    "word": "ҡорма",
+    "description": "занавес"
+  },
+  {
+    "word": "һалыҡ",
+    "description": "доля, порция, пай, вклад"
+  },
+  {
+    "word": "ҡором",
+    "description": "сажа"
+  },
+  {
+    "word": "ғишыҡ",
+    "description": "любовь"
+  },
+  {
+    "word": "ҡулса",
+    "description": "кольцо"
+  },
+  {
+    "word": "һарыҡ",
+    "description": "овца"
+  },
+  {
+    "word": "ҡулҡа",
+    "description": "аорта"
+  },
+  {
+    "word": "һағым",
+    "description": "марево"
+  },
+  {
+    "word": "ҡыйма",
+    "description": "то же, что туҡ эсәк"
+  },
+  {
+    "word": "һағыҙ",
+    "description": "жвачка"
+  },
+  {
+    "word": "ғөсөл",
+    "description": "большое омовение"
+  },
+  {
+    "word": "ҡумыҙ",
+    "description": "кубыз"
+  },
+  {
+    "word": "һалма",
+    "description": "лапша"
+  },
+  {
+    "word": "ҡурыҙ",
+    "description": "и. диал. ҡар. ҡурыз"
+  },
+  {
+    "word": "һапма",
+    "description": "тесемка"
+  },
+  {
+    "word": "ҡумыҡ",
+    "description": "кумык"
+  },
+  {
+    "word": "һырма",
+    "description": "телогрейка"
+  },
+  {
+    "word": "ҡуныҡ",
+    "description": "налет"
+  },
+  {
+    "word": "һырға",
+    "description": "серьги"
+  },
+  {
+    "word": "ҡуңыҙ",
+    "description": "жук"
+  },
+  {
+    "word": "һаҡма",
+    "description": "мнение"
+  },
+  {
+    "word": "ҡыйыҡ",
+    "description": "крыша"
+  },
+  {
+    "word": "һелте",
+    "description": "щёлочь"
+  },
+  {
+    "word": "ҡырла",
+    "description": "увал"
+  },
+  {
+    "word": "һемәк",
+    "description": "дымарь, окуриватель"
+  },
+  {
+    "word": "ҡылыҡ",
+    "description": "поступок"
+  },
+  {
+    "word": "һурпа",
+    "description": "бульон"
+  },
+  {
+    "word": "ҡырый",
+    "description": "и. диал. ҡар. ҡыр"
+  },
+  {
+    "word": "һуҙма",
+    "description": "и. этн. ҡар. түр юрған"
+  },
+  {
+    "word": "ҡытыҡ",
+    "description": "щекотка"
+  },
+  {
+    "word": "һуҡма",
+    "description": "ударный"
+  },
+  {
+    "word": "ҡыҙый",
+    "description": "девочка, девушка"
+  },
+  {
+    "word": "һуҡта",
+    "description": "кисть, гроздь"
+  },
+  {
+    "word": "ҡыуыҡ",
+    "description": "мочевой пузырь"
+  },
+  {
+    "word": "һиҙем",
+    "description": "ощущение"
+  },
+  {
+    "word": "ҡумта",
+    "description": "шкатулка"
+  },
+  {
+    "word": "һыныҡ",
+    "description": "ломоть"
+  },
+  {
+    "word": "ҡушма",
+    "description": "сложный"
+  },
+  {
+    "word": "һырыҡ",
+    "description": "шест для подвешивания мяса"
+  },
+  {
+    "word": "ҡуяға",
+    "description": "см. ҡанъяға"
+  },
+  {
+    "word": "һыуыҡ",
+    "description": "холодный"
+  },
+  {
+    "word": "үрҙәк",
+    "description": "утка"
+  },
+  {
+    "word": "һуйыл",
+    "description": "дубина"
+  },
+  {
+    "word": "ҡырпа",
+    "description": "белуга"
+  },
+  {
+    "word": "һуҙым",
+    "description": "длина, расстояние"
+  },
+  {
+    "word": "ҡыҫма",
+    "description": "Верёвка для связывания сена (при перевозке)"
+  },
+  {
+    "word": "һөйәк",
+    "description": "кость"
+  },
+  {
+    "word": "ҡыҫыҡ",
+    "description": "узкий"
+  },
+  {
+    "word": "һөлөк",
+    "description": "пиявка"
+  },
+  {
+    "word": "үрсем",
+    "description": "приплод"
+  },
+  {
+    "word": "һыҙма",
+    "description": "чертёж"
+  },
+  {
+    "word": "үрнәк",
+    "description": "образец"
+  },
+  {
+    "word": "һыҙым",
+    "description": "чертёж"
+  },
+  {
+    "word": "үслек",
+    "description": "вражда"
+  },
+  {
+    "word": "һыҙыҡ",
+    "description": "линия"
+  },
+  {
+    "word": "үҙлек",
+    "description": "личное"
+  },
+  {
+    "word": "һөрөм",
+    "description": "копоть"
+  },
+  {
+    "word": "үңлек",
+    "description": "потник"
+  },
+  {
+    "word": "һыҡра",
+    "description": "запах мочи"
+  },
+  {
+    "word": "өйрәк",
+    "description": "утка"
+  },
+  {
+    "word": "һөжүм",
+    "description": "атака"
+  },
+  {
+    "word": "өйсөк",
+    "description": "шина"
+  },
+  {
+    "word": "әбдел",
+    "description": "Название родового подразделения башкир племени ай; абдел"
+  },
+  {
+    "word": "өйкөм",
+    "description": "гряда"
+  },
+  {
+    "word": "әпсүк",
+    "description": "и. диал. ҡар. әпсек"
+  },
+  {
+    "word": "өлкөм",
+    "description": "куст, пучок"
+  },
+  {
+    "word": "әрмәк",
+    "description": "армяк"
+  },
+  {
+    "word": "өлпөй",
+    "description": "клок пуха"
+  },
+  {
+    "word": "әйтем",
+    "description": "поговорка"
+  },
+  {
+    "word": "өрлөк",
+    "description": "матица"
+  },
+  {
+    "word": "әнкәй",
+    "description": "и. диал. ҡар. әсәй"
+  },
+  {
+    "word": "өслөк",
+    "description": "трёхрублёвка"
+  },
+  {
+    "word": "әпсәй",
+    "description": "и. һөйл. ҡар. әсәй"
+  },
+  {
+    "word": "өҫлөк",
+    "description": "верхний войлок юрты"
+  },
+  {
+    "word": "әхүәл",
+    "description": "обстоятельство"
+  },
+  {
+    "word": "өлтөк",
+    "description": "прядь"
+  },
+  {
+    "word": "әүләд",
+    "description": "дети"
+  },
+  {
+    "word": "өмәсе",
+    "description": "участник коллективной помощи"
+  },
+  {
+    "word": "әтлек",
+    "description": "бубенчик"
+  },
+  {
+    "word": "өҫтәл",
+    "description": "стол"
+  },
+  {
+    "word": "әһали",
+    "description": "жители"
+  },
+  {
+    "word": "өсъяҡ",
+    "description": "пристройка"
+  },
+  {
+    "word": "аҫаба",
+    "description": "вотчинник"
+  },
+  {
+    "word": "кәбаб",
+    "description": "кебаб"
+  }
+]
