@@ -8,6 +8,10 @@ const KB_ROWS = [
 const MAX_ATTEMPTS = 6;
 const WORD_LENGTH = 5;
 const PRIORITY = { correct: 3, present: 2, absent: 1 };
+const PWA_DISMISSED_UNTIL_KEY = "pwa_install_dismissed_until";
+const PWA_INSTALLED_KEY = "pwa_install_installed";
+const PWA_PROMPT_SEEN_KEY = "pwa_install_prompt_seen";
+const PWA_REMIND_DELAY_MS = 7 * 24 * 60 * 60 * 1000;
 
 let board = Array.from({ length: MAX_ATTEMPTS }, () => Array(WORD_LENGTH).fill(""));
 let results = Array.from({ length: MAX_ATTEMPTS }, () => Array(WORD_LENGTH).fill(null));
@@ -18,6 +22,8 @@ let gameStatus = "in_progress";
 let dayAvailable = true;
 let isSubmitting = false;
 let activeState = null;
+let deferredInstallPrompt = null;
+let waitInstallUntilHelpClosed = false;
 
 function decodeMask(mask) {
   return mask.split("").map((ch) => {
@@ -52,6 +58,83 @@ function showToast(msg) {
   t.textContent = msg;
   c.appendChild(t);
   setTimeout(() => t.remove(), 2000);
+}
+
+function isStandaloneMode() {
+  return (
+    window.matchMedia("(display-mode: standalone)").matches ||
+    window.navigator.standalone === true
+  );
+}
+
+function isIosSafari() {
+  const ua = window.navigator.userAgent.toLowerCase();
+  const isIOS =
+    /iphone|ipad|ipod/.test(ua) ||
+    (window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
+  const isSafari = /safari/.test(ua) && !/crios|fxios|edgios|opios/.test(ua);
+  return isIOS && isSafari;
+}
+
+function getDismissedUntilMs() {
+  const raw = window.localStorage.getItem(PWA_DISMISSED_UNTIL_KEY);
+  const parsed = Number(raw || 0);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function isInstallDismissed() {
+  return Date.now() < getDismissedUntilMs();
+}
+
+function markInstallDismissed() {
+  const until = Date.now() + PWA_REMIND_DELAY_MS;
+  window.localStorage.setItem(PWA_DISMISSED_UNTIL_KEY, String(until));
+}
+
+function isInstallCompleted() {
+  return window.localStorage.getItem(PWA_INSTALLED_KEY) === "1";
+}
+
+function hideInstallBanner() {
+  const banner = document.getElementById("pwaInstallBanner");
+  if (!banner) return;
+  banner.classList.remove("open");
+}
+
+function setInstallBannerMode({ iosFallback }) {
+  const text = document.getElementById("installBannerText");
+  const installBtn = document.getElementById("installBannerInstall");
+
+  if (iosFallback) {
+    text.textContent =
+      "Safari менюнан Бүлешеүҙе баҫығыҙ ҙа, \"Баш экранға өҫтәргә\" тигәнде һайлағыҙ.";
+    installBtn.style.display = "none";
+    return;
+  }
+
+  text.textContent = "Һүҙлене айырым ҡушымта итеп асығыҙ, эҙләп йөрөмәгеҙ.";
+  installBtn.style.display = "";
+}
+
+function shouldShowInstallPrompt() {
+  if (waitInstallUntilHelpClosed) return false;
+  if (isStandaloneMode()) return false;
+  if (isInstallCompleted()) return false;
+  if (isInstallDismissed()) return false;
+  return true;
+}
+
+function maybeShowInstallBanner() {
+  const banner = document.getElementById("pwaInstallBanner");
+  if (!banner || !shouldShowInstallPrompt()) return;
+
+  const iosFallback = isIosSafari();
+  const nativePromptAvailable = Boolean(deferredInstallPrompt);
+  if (!iosFallback && !nativePromptAvailable) return;
+
+  setInstallBannerMode({ iosFallback });
+  banner.classList.add("open");
+  window.localStorage.setItem(PWA_PROMPT_SEEN_KEY, "1");
 }
 
 function buildBoard() {
@@ -383,12 +466,19 @@ function attachKeyboardListener() {
 }
 
 function setupModals() {
-  document.getElementById("helpBtn").onclick = () =>
-    document.getElementById("helpModal").classList.add("open");
-  document.getElementById("closeHelp").onclick = () =>
-    document.getElementById("helpModal").classList.remove("open");
-  document.getElementById("helpModal").onclick = (e) => {
-    if (e.target === e.currentTarget) e.currentTarget.classList.remove("open");
+  const helpModal = document.getElementById("helpModal");
+  const closeHelpModal = () => {
+    helpModal.classList.remove("open");
+    if (waitInstallUntilHelpClosed) {
+      waitInstallUntilHelpClosed = false;
+      maybeShowInstallBanner();
+    }
+  };
+
+  document.getElementById("helpBtn").onclick = () => helpModal.classList.add("open");
+  document.getElementById("closeHelp").onclick = () => closeHelpModal();
+  helpModal.onclick = (e) => {
+    if (e.target === e.currentTarget) closeHelpModal();
   };
 
   document.getElementById("newGameBtn").onclick = () => {
@@ -400,8 +490,11 @@ function setupModals() {
   };
 
   if (!localStorage.getItem("bashWordle_visited")) {
-    document.getElementById("helpModal").classList.add("open");
+    waitInstallUntilHelpClosed = true;
+    helpModal.classList.add("open");
     localStorage.setItem("bashWordle_visited", "1");
+  } else {
+    maybeShowInstallBanner();
   }
 }
 
@@ -524,8 +617,66 @@ function setupActions() {
   };
 }
 
+async function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+  try {
+    await navigator.serviceWorker.register("/sw.js");
+  } catch (_e) {
+    // PWA is optional; failure should not block gameplay.
+  }
+}
+
+function setupInstallFlow() {
+  const installBtn = document.getElementById("installBannerInstall");
+  const laterBtn = document.getElementById("installBannerLater");
+  const closeBtn = document.getElementById("installBannerClose");
+
+  const dismissInstallBanner = () => {
+    markInstallDismissed();
+    hideInstallBanner();
+  };
+
+  installBtn.onclick = async () => {
+    const installPrompt = deferredInstallPrompt;
+    if (!installPrompt) {
+      hideInstallBanner();
+      return;
+    }
+
+    try {
+      await installPrompt.prompt();
+      const result = await installPrompt.userChoice;
+      if (result && result.outcome !== "accepted") {
+        markInstallDismissed();
+      }
+    } catch (_e) {
+      markInstallDismissed();
+    } finally {
+      deferredInstallPrompt = null;
+      hideInstallBanner();
+    }
+  };
+
+  laterBtn.onclick = () => dismissInstallBanner();
+  closeBtn.onclick = () => dismissInstallBanner();
+
+  window.addEventListener("beforeinstallprompt", (event) => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    maybeShowInstallBanner();
+  });
+
+  window.addEventListener("appinstalled", () => {
+    window.localStorage.setItem(PWA_INSTALLED_KEY, "1");
+    deferredInstallPrompt = null;
+    hideInstallBanner();
+  });
+}
+
+registerServiceWorker();
 buildBoard();
 buildKeyboard();
+setupInstallFlow();
 setupModals();
 setupActions();
 attachKeyboardListener();

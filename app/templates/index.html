@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>ҺҮҘЛЕ — Wordle башҡортса</title>
+  <meta name="theme-color" content="#0f1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ҺҮҘЛЕ">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon-180.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/style.css?v=20260305-1">
+  <link rel="stylesheet" href="/static/style.css?v=20260305-2">
 </head>
 <body>
 <header>
@@ -23,6 +29,18 @@
 </div>
 
 <div id="keyboard"></div>
+
+<div id="pwaInstallBanner" class="install-banner" role="dialog" aria-live="polite">
+  <button class="install-banner-close" id="installBannerClose" aria-label="Ябыу">×</button>
+  <div class="install-banner-title">Ҡушымта итеп ҡуйығыҙ</div>
+  <div class="install-banner-text" id="installBannerText">
+    Һүҙлене айырым ҡушымта итеп асығыҙ, эҙләп йөрөмәгеҙ.
+  </div>
+  <div class="install-banner-actions">
+    <button id="installBannerInstall">Ҡуйырға</button>
+    <button id="installBannerLater" class="secondary">Һуңыраҡ</button>
+  </div>
+</div>
 
 <div class="panel">
   <h3>һөҙөмтә</h3>
@@ -96,6 +114,6 @@
   </div>
 </div>
 
-<script type="module" src="/static/app.js?v=20260305-1"></script>
+<script type="module" src="/static/app.js?v=20260305-2"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 .venv/
 .pytest_cache/
 __pycache__/
+.DS_Store
 *.py[cod]
 *.sqlite3
 *.db

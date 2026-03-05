@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+
 from fastapi.testclient import TestClient
 
 
@@ -104,3 +106,32 @@ def test_history_returns_last_10_days_with_word_and_description(client):
         assert item["word"]
         assert item["description"]
         assert item["day"]
+
+
+def test_index_has_pwa_metadata(client):
+    r = client.get("/")
+    assert r.status_code == 200
+    html = r.text
+    assert '<link rel="manifest" href="/manifest.webmanifest">' in html
+    assert '<meta name="theme-color" content="#0f1117">' in html
+    assert '<meta name="apple-mobile-web-app-capable" content="yes">' in html
+    assert '<link rel="apple-touch-icon" href="/static/icons/apple-touch-icon-180.png">' in html
+
+
+def test_manifest_route_returns_valid_manifest(client):
+    r = client.get("/manifest.webmanifest")
+    assert r.status_code == 200
+    assert r.headers["content-type"].startswith("application/manifest+json")
+    payload = json.loads(r.text)
+    assert payload["name"] == "ҺҮҘЛЕ — Wordle башҡортса"
+    assert payload["display"] == "standalone"
+    assert payload["start_url"] == "/"
+    assert any(icon.get("purpose") == "maskable" for icon in payload["icons"])
+
+
+def test_service_worker_route_has_no_cache_header(client):
+    r = client.get("/sw.js")
+    assert r.status_code == 200
+    assert r.headers["content-type"].startswith("application/javascript")
+    assert "no-cache" in r.headers.get("cache-control", "")
+    assert "CACHE_NAME" in r.text
