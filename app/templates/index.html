@@ -11,7 +11,7 @@
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="apple-touch-icon" href="/static/icons/apple-touch-icon-180.png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/static/style.css?v=20260305-2">
+  <link rel="stylesheet" href="/static/style.css?v=20260317b">
 </head>
 <body>
 <header>
@@ -40,6 +40,11 @@
     <button id="installBannerInstall">Ҡуйырға</button>
     <button id="installBannerLater" class="secondary">Һуңыраҡ</button>
   </div>
+</div>
+
+<div class="panel" id="achievementsPanel">
+  <h3>Яулауҙар</h3>
+  <div class="achievements-row" id="achievementsRow"></div>
 </div>
 
 <div class="panel">
@@ -114,6 +119,33 @@
   </div>
 </div>
 
-<script type="module" src="/static/app.js?v=20260305-2"></script>
+<div class="modal-overlay" id="historyDetailModal">
+  <div class="modal end-modal">
+    <h2 id="historyDetailTitle"></h2>
+    <div class="answer-word" id="historyDetailWord"></div>
+    <div id="historyDetailDesc" style="font-size:13px;color:var(--text-dim);line-height:1.4"></div>
+    <div id="historyDetailBoard" class="history-board"></div>
+    <div class="stats-row" id="historyDetailStats">
+      <div class="stat-item"><span class="num" id="historyDetailPlace">-</span><span class="label">Урын</span></div>
+      <div class="stat-item"><span class="num" id="historyDetailAttempts">-</span><span class="label">Ынтылыш</span></div>
+    </div>
+    <div class="end-actions">
+      <button id="historyDownloadBtn">PNG төшөрөү</button>
+      <button id="historyShareBtn">Һылтанма</button>
+    </div>
+    <div id="historyShareLinkBox"></div>
+    <button class="new-game-btn" id="closeHistoryDetail">Ябырға</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="achievementsModal">
+  <div class="modal achievements-modal">
+    <h2>Яулауҙар</h2>
+    <div class="achievements-grid" id="achievementsGrid"></div>
+    <button class="close-btn" id="closeAchievements">ЯБЫРҒА</button>
+  </div>
+</div>
+
+<script type="module" src="/static/app.js?v=20260317b"></script>
 </body>
 </html>

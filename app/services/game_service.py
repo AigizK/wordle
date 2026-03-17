@@ -273,10 +273,11 @@ def build_history_last_10_days(db: Session, settings: Settings, player: Player, 
     stmt = (
         select(Game, DailyWord)
         .join(DailyWord, DailyWord.id == Game.daily_word_id)
+        .options(joinedload(Game.guesses))
         .where(Game.player_id == player.id, DailyWord.day_key.in_(day_keys))
     )
     played_by_day: dict[str, tuple[Game, DailyWord]] = {}
-    for game, daily in db.execute(stmt).all():
+    for game, daily in db.execute(stmt).unique().all():
         played_by_day[daily.day_key] = (game, daily)
 
     history: list[dict] = []
@@ -285,6 +286,7 @@ def build_history_last_10_days(db: Session, settings: Settings, player: Player, 
         existing = played_by_day.get(key)
         if existing:
             game, daily = existing
+            place = place_for_game(db, game) if game.status == "won" else None
             history.append(
                 {
                     "day": key,
@@ -292,6 +294,10 @@ def build_history_last_10_days(db: Session, settings: Settings, player: Player, 
                     "description": daily.description,
                     "user_status": game.status,
                     "attempts_used": game.attempts_used,
+                    "game_id": game.id,
+                    "guesses": [serialize_guess(g) for g in sorted(game.guesses, key=lambda x: x.attempt_no)],
+                    "place": place,
+                    "win_elapsed_seconds": game.win_elapsed_seconds,
                 }
             )
             continue
@@ -307,10 +313,63 @@ def build_history_last_10_days(db: Session, settings: Settings, player: Player, 
                 "description": task.description,
                 "user_status": "not_played",
                 "attempts_used": None,
+                "game_id": None,
+                "guesses": [],
+                "place": None,
+                "win_elapsed_seconds": None,
             }
         )
 
     return history
+
+
+def build_achievements(db: Session, settings: Settings, player: Player) -> dict:
+    today = local_today(settings)
+
+    # Get all days this player won, ordered desc
+    stmt = (
+        select(DailyWord.day_key)
+        .join(Game, Game.daily_word_id == DailyWord.id)
+        .where(Game.player_id == player.id, Game.status == "won")
+        .order_by(DailyWord.day_key.desc())
+    )
+    won_days_set = {row[0] for row in db.execute(stmt).all()}
+
+    # Count current win streak backwards from today (or yesterday if today not won yet)
+    streak = 0
+    check_day = today
+    if day_key(today) not in won_days_set:
+        check_day = today - timedelta(days=1)
+    while day_key(check_day) in won_days_set:
+        streak += 1
+        check_day = check_day - timedelta(days=1)
+
+    # Check if player was first to answer today
+    first_today = False
+    daily_word = ensure_daily_word(db, settings, today)
+    if daily_word is not None:
+        game = get_game_for_player_and_day(db, player.id, daily_word.id)
+        if game is not None and game.status == "won":
+            place = place_for_game(db, game)
+            first_today = place == 1
+
+    # Total games played by this player
+    total_played = db.scalar(
+        select(func.count(Game.id))
+        .where(Game.player_id == player.id)
+    ) or 0
+
+    return {
+        "streak_3": streak >= 3,
+        "streak_5": streak >= 5,
+        "streak_10": streak >= 10,
+        "streak_25": streak >= 25,
+        "streak_50": streak >= 50,
+        "first_today": first_today,
+        "tried_30": int(total_played) >= 30,
+        "win_streak": streak,
+        "total_played": int(total_played),
+    }
 
 
 def build_totals(db: Session, player: Player) -> dict:
@@ -341,6 +400,15 @@ def get_today_context(db: Session, settings: Settings, player: Player) -> tuple[
 
     game = get_or_create_game(db, player, daily_word)
     return True, daily_word, game, today_key
+
+
+def get_finished_game_for_player(db: Session, player_id: int, game_id: int) -> Game | None:
+    stmt = (
+        select(Game)
+        .options(joinedload(Game.guesses), joinedload(Game.daily_word))
+        .where(Game.id == game_id, Game.player_id == player_id)
+    )
+    return db.scalar(stmt)
 
 
 def get_or_create_share_link(db: Session, settings: Settings, game: Game) -> ShareLink:

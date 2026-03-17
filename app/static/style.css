@@ -550,6 +550,155 @@
   cursor: pointer;
 }
 
+/* Achievements */
+.achievements-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.achievement-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s, filter 0.15s;
+  object-fit: cover;
+}
+
+.achievement-icon:active {
+  transform: scale(0.92);
+}
+
+.achievement-icon.locked {
+  filter: grayscale(100%) brightness(0.5);
+}
+
+.achievements-modal {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.achievements-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.achievement-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.achievement-item img.locked {
+  filter: grayscale(100%) brightness(0.5);
+}
+
+.achievement-item .achievement-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.achievement-item .achievement-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.achievement-item .achievement-desc {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.3;
+}
+
+.achievement-item .achievement-check {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* History detail */
+.list-item.clickable {
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.list-item.clickable:hover {
+  background: var(--surface2);
+  border-color: var(--accent);
+}
+
+.list-item.clickable:active {
+  transform: scale(0.99);
+}
+
+.history-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 14px 0;
+}
+
+.history-row {
+  display: flex;
+  gap: 4px;
+}
+
+.history-tile {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.history-tile.correct {
+  background: var(--correct-bg);
+  border-color: var(--correct);
+  color: #fff;
+}
+
+.history-tile.present {
+  background: var(--present-bg);
+  border-color: var(--present);
+  color: #fff;
+}
+
+.history-tile.absent {
+  background: var(--absent-bg);
+  border-color: var(--absent);
+  color: var(--text-dim);
+}
+
+#historyShareLinkBox {
+  margin-top: 10px;
+  word-break: break-all;
+  color: var(--accent);
+  font-size: 12px;
+}
+
 @keyframes install-banner-in {
   from {
     opacity: 0;

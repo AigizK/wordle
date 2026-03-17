@@ -8,6 +8,16 @@ const KB_ROWS = [
 const MAX_ATTEMPTS = 6;
 const WORD_LENGTH = 5;
 const PRIORITY = { correct: 3, present: 2, absent: 1 };
+const ACHIEVEMENTS = [
+  { key: "streak_3",   img: "/assets/3_days.png",  label: "3 көн рәттән", desc: "3 көн рәттән дөрөҫ яуап бир" },
+  { key: "streak_5",   img: "/assets/5_days.png",  label: "5 көн рәттән", desc: "5 көн рәттән дөрөҫ яуап бир" },
+  { key: "streak_10",  img: "/assets/10_days.png", label: "10 көн рәттән", desc: "10 көн рәттән дөрөҫ яуап бир" },
+  { key: "streak_25",  img: "/assets/25_days.png", label: "25 көн рәттән", desc: "25 көн рәттән дөрөҫ яуап бир" },
+  { key: "streak_50",  img: "/assets/50_days.png", label: "50 көн рәттән", desc: "50 көн рәттән дөрөҫ яуап бир" },
+  { key: "first_today", img: "/assets/faster.png", label: "Иң тиҙ", desc: "Иң беренсе булып яуап бир" },
+  { key: "tried_30",   img: "/assets/tried.png",   label: "Тәжрибәле", desc: "30 тапҡыр үҙеңде һынап ҡара" },
+];
+
 const PWA_DISMISSED_UNTIL_KEY = "pwa_install_dismissed_until";
 const PWA_INSTALLED_KEY = "pwa_install_installed";
 const PWA_PROMPT_SEEN_KEY = "pwa_install_prompt_seen";
@@ -268,17 +278,206 @@ function renderHistory(items) {
     box.innerHTML = '<div class="list-item"><div class="row2">Әлегә тарих юҡ.</div></div>';
     return;
   }
-  box.innerHTML = items
-    .map((item) => {
-      const statusLabel =
-        item.user_status === "won"
-          ? "Еңде"
-          : item.user_status === "lost"
-          ? "Еңелдe"
-          : "Уйналманы";
-      return `<div class="list-item"><div class="row1"><strong>${item.day}</strong><span class="badge ${item.user_status}">${statusLabel}</span></div><div class="row2"><strong>${item.word.toUpperCase()}</strong> — ${item.description}</div></div>`;
-    })
-    .join("");
+  box.innerHTML = "";
+  items.forEach((item) => {
+    const statusLabel =
+      item.user_status === "won"
+        ? "Еңде"
+        : item.user_status === "lost"
+        ? "Еңелдe"
+        : "Уйналманы";
+    const el = document.createElement("div");
+    el.className = "list-item" + (item.user_status !== "not_played" ? " clickable" : "");
+    el.innerHTML = `<div class="row1"><strong>${item.day}</strong><span class="badge ${item.user_status}">${statusLabel}</span></div><div class="row2"><strong>${item.word.toUpperCase()}</strong> — ${item.description}</div>`;
+    if (item.user_status !== "not_played" && item.guesses && item.guesses.length) {
+      el.onclick = () => openHistoryDetail(item);
+    }
+    box.appendChild(el);
+  });
+}
+
+function openHistoryDetail(item) {
+  const titleEl = document.getElementById("historyDetailTitle");
+  const wordEl = document.getElementById("historyDetailWord");
+  const descEl = document.getElementById("historyDetailDesc");
+  const boardEl = document.getElementById("historyDetailBoard");
+  const placeEl = document.getElementById("historyDetailPlace");
+  const attemptsEl = document.getElementById("historyDetailAttempts");
+  const shareLinkBox = document.getElementById("historyShareLinkBox");
+
+  titleEl.textContent = item.user_status === "won" ? "🎉 Еңеү!" : "Еңелеү";
+  wordEl.textContent = item.word.toUpperCase();
+  descEl.textContent = item.description;
+  placeEl.textContent = item.place != null ? `#${item.place}` : "-";
+  attemptsEl.textContent = item.attempts_used != null ? String(item.attempts_used) : "-";
+  shareLinkBox.innerHTML = "";
+
+  // Build mini board
+  boardEl.innerHTML = "";
+  for (let r = 0; r < MAX_ATTEMPTS; r++) {
+    const row = document.createElement("div");
+    row.className = "history-row";
+    const guess = item.guesses[r];
+    for (let c = 0; c < WORD_LENGTH; c++) {
+      const tile = document.createElement("div");
+      tile.className = "history-tile";
+      if (guess) {
+        tile.textContent = guess.guess_word[c].toUpperCase();
+        const mask = decodeMask(guess.result_mask);
+        tile.classList.add(mask[c]);
+      }
+      row.appendChild(tile);
+    }
+    boardEl.appendChild(row);
+  }
+
+  // Store for sharing
+  historyDetailItem = item;
+
+  document.getElementById("historyDetailModal").classList.add("open");
+}
+
+let historyDetailItem = null;
+
+function drawHistoryResultImage(item) {
+  if (!item || !item.guesses || !item.guesses.length) return;
+
+  const hBoard = Array.from({ length: MAX_ATTEMPTS }, () => Array(WORD_LENGTH).fill(""));
+  const hResults = Array.from({ length: MAX_ATTEMPTS }, () => Array(WORD_LENGTH).fill(null));
+
+  item.guesses.forEach((g, idx) => {
+    const letters = g.guess_word.split("");
+    const mask = decodeMask(g.result_mask);
+    for (let i = 0; i < WORD_LENGTH; i++) {
+      hBoard[idx][i] = letters[i];
+      hResults[idx][i] = mask[i];
+    }
+  });
+
+  const canvas = document.createElement("canvas");
+  canvas.width = 1080;
+  canvas.height = 1350;
+  const ctx = canvas.getContext("2d");
+
+  const tileSize = 110;
+  const gap = 16;
+  const startX = (canvas.width - (WORD_LENGTH * tileSize + (WORD_LENGTH - 1) * gap)) / 2;
+  const startY = 320;
+
+  ctx.fillStyle = "#0f1117";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, 0);
+  grad.addColorStop(0, "#22c55e");
+  grad.addColorStop(1, "#60a5fa");
+  ctx.fillStyle = grad;
+  ctx.font = "900 88px Noto Sans";
+  ctx.textAlign = "center";
+  ctx.fillText("ҺҮҘЛЕ", canvas.width / 2, 140);
+
+  ctx.fillStyle = "#8b8d97";
+  ctx.font = "600 34px Noto Sans";
+  ctx.fillText(item.day, canvas.width / 2, 195);
+
+  for (let r = 0; r < MAX_ATTEMPTS; r++) {
+    for (let c = 0; c < WORD_LENGTH; c++) {
+      const x = startX + c * (tileSize + gap);
+      const y = startY + r * (tileSize + gap);
+      const letter = hBoard[r][c] || "";
+      const st = hResults[r][c];
+
+      let fill = "#1a1d27";
+      let stroke = "#3a3d4a";
+      if (st === "correct") { fill = "#166534"; stroke = "#22c55e"; }
+      else if (st === "present") { fill = "#854d0e"; stroke = "#eab308"; }
+      else if (st === "absent") { fill = "#1e2028"; stroke = "#3a3d4a"; }
+
+      ctx.fillStyle = fill;
+      ctx.strokeStyle = stroke;
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.roundRect(x, y, tileSize, tileSize, 12);
+      ctx.fill();
+      ctx.stroke();
+
+      if (letter) {
+        ctx.fillStyle = "#e8e6e3";
+        ctx.font = "800 52px Noto Sans";
+        ctx.fillText(letter.toUpperCase(), x + tileSize / 2, y + 72);
+      }
+    }
+  }
+
+  ctx.fillStyle = "#e8e6e3";
+  ctx.font = "700 40px Noto Sans";
+  ctx.fillText("https://һүҙле.рф", canvas.width / 2, 1110);
+
+  ctx.fillStyle = "#8b8d97";
+  ctx.font = "600 28px Noto Sans";
+  const placeTxt = item.place != null ? `Урын: #${item.place}` : "Урын: -";
+  const elapsedTxt = item.win_elapsed_seconds != null ? `Ваҡыт: ${formatDuration(item.win_elapsed_seconds)}` : "Ваҡыт: -";
+  ctx.fillText(`${placeTxt}  •  ${elapsedTxt}`, canvas.width / 2, 1160);
+
+  const link = document.createElement("a");
+  link.download = `wordle-${item.day}.png`;
+  link.href = canvas.toDataURL("image/png");
+  link.click();
+}
+
+async function createHistoryShareLink(item) {
+  if (!item || !item.game_id) return;
+  const box = document.getElementById("historyShareLinkBox");
+  box.textContent = "...";
+  const res = await fetch(`/api/share/game/${item.game_id}`, {
+    method: "POST",
+    credentials: "same-origin",
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: "Хата" }));
+    box.textContent = err.detail || "Хата";
+    return;
+  }
+  const payload = await res.json();
+  box.innerHTML = `<a href="${payload.url}" target="_blank" rel="noopener">${payload.url}</a>`;
+  try {
+    await navigator.clipboard.writeText(payload.url);
+    showToast("Һылтанма күсерелде");
+  } catch (_e) {
+    showToast("Һылтанма әҙер");
+  }
+}
+
+function renderAchievements(achievements) {
+  const row = document.getElementById("achievementsRow");
+  row.innerHTML = "";
+  ACHIEVEMENTS.forEach((a) => {
+    const unlocked = achievements[a.key] === true;
+    const img = document.createElement("img");
+    img.src = a.img;
+    img.alt = a.label;
+    img.className = "achievement-icon" + (unlocked ? "" : " locked");
+    img.onclick = () => openAchievementsModal(achievements);
+    row.appendChild(img);
+  });
+}
+
+function openAchievementsModal(achievements) {
+  const grid = document.getElementById("achievementsGrid");
+  grid.innerHTML = "";
+  ACHIEVEMENTS.forEach((a) => {
+    const unlocked = achievements[a.key] === true;
+    const item = document.createElement("div");
+    item.className = "achievement-item";
+    item.innerHTML =
+      `<img src="${a.img}" alt="${a.label}" class="${unlocked ? "" : "locked"}">` +
+      `<div class="achievement-info">` +
+        `<div class="achievement-name">${a.label}</div>` +
+        `<div class="achievement-desc">${a.desc}</div>` +
+      `</div>` +
+      `<div class="achievement-check">${unlocked ? "✅" : "🔒"}</div>`;
+    grid.appendChild(item);
+  });
+  document.getElementById("achievementsModal").classList.add("open");
 }
 
 function hydrateState(payload) {
@@ -314,6 +513,7 @@ function hydrateState(payload) {
   renderLeaderboard(payload.leaderboard_top);
   renderHistory(payload.history_last_10_days);
   renderTotals(payload.totals);
+  if (payload.achievements) renderAchievements(payload.achievements);
 
   if (g.status === "won" || g.status === "lost") {
     fillEndModal(g);
@@ -334,7 +534,7 @@ function fillEndModal(gameState) {
     gameState.place != null ? `#${gameState.place}` : "-";
   document.getElementById("endElapsed").textContent =
     gameState.win_elapsed_seconds != null
-      ? `Сүҙ асылғандан һуң: ${formatDuration(gameState.win_elapsed_seconds)}`
+      ? `һүҙ асылғандан һуң: ${formatDuration(gameState.win_elapsed_seconds)}`
       : "";
 }
 
@@ -415,6 +615,7 @@ async function submitGuess() {
       gameStatus = payload.game_state.status;
       renderLeaderboard(payload.leaderboard_top);
       renderTotals(payload.totals);
+      if (payload.achievements) renderAchievements(payload.achievements);
 
       if (gameStatus === "in_progress") {
         currentRow += 1;
@@ -487,6 +688,26 @@ function setupModals() {
 
   document.getElementById("endModal").onclick = (e) => {
     if (e.target === e.currentTarget) e.currentTarget.classList.remove("open");
+  };
+
+  const historyDetailModal = document.getElementById("historyDetailModal");
+  document.getElementById("closeHistoryDetail").onclick = () =>
+    historyDetailModal.classList.remove("open");
+  historyDetailModal.onclick = (e) => {
+    if (e.target === e.currentTarget) historyDetailModal.classList.remove("open");
+  };
+  document.getElementById("historyDownloadBtn").onclick = () => {
+    if (historyDetailItem) drawHistoryResultImage(historyDetailItem);
+  };
+  document.getElementById("historyShareBtn").onclick = () => {
+    if (historyDetailItem) createHistoryShareLink(historyDetailItem);
+  };
+
+  const achievementsModal = document.getElementById("achievementsModal");
+  document.getElementById("closeAchievements").onclick = () =>
+    achievementsModal.classList.remove("open");
+  achievementsModal.onclick = (e) => {
+    if (e.target === e.currentTarget) achievementsModal.classList.remove("open");
   };
 
   if (!localStorage.getItem("bashWordle_visited")) {

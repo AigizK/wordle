@@ -29,6 +29,10 @@ class HistoryItemOut(BaseModel):
     description: str
     user_status: str
     attempts_used: int | None = None
+    game_id: int | None = None
+    guesses: list[GuessItemOut] = []
+    place: int | None = None
+    win_elapsed_seconds: int | None = None
 
 
 class TotalsOut(BaseModel):
@@ -37,6 +41,18 @@ class TotalsOut(BaseModel):
     played_total: int
     your_played: int
     your_wins: int
+
+
+class AchievementsOut(BaseModel):
+    streak_3: bool = False
+    streak_5: bool = False
+    streak_10: bool = False
+    streak_25: bool = False
+    streak_50: bool = False
+    first_today: bool = False
+    tried_30: bool = False
+    win_streak: int = 0
+    total_played: int = 0
 
 
 class GameStateOut(BaseModel):
@@ -58,6 +74,7 @@ class StateOut(BaseModel):
     leaderboard_top: list[LeaderboardItemOut]
     history_last_10_days: list[HistoryItemOut]
     totals: TotalsOut
+    achievements: AchievementsOut
 
 
 class GuessResponseOut(BaseModel):
@@ -65,6 +82,7 @@ class GuessResponseOut(BaseModel):
     game_state: GameStateOut
     leaderboard_top: list[LeaderboardItemOut]
     totals: TotalsOut
+    achievements: AchievementsOut
 
 
 class ShareCreateResponse(BaseModel):

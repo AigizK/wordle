@@ -1,4 +1,4 @@
-const CACHE_NAME = "huzle-app-shell-v2";
+const CACHE_NAME = "huzle-app-shell-v5";
 const APP_SHELL = [
   "/",
   "/manifest.webmanifest",
@@ -22,6 +22,11 @@ self.addEventListener("activate", (event) => {
       .keys()
       .then((keys) => Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))))
       .then(() => self.clients.claim())
+      .then(() =>
+        self.clients.matchAll({ type: "window" }).then((clients) => {
+          clients.forEach((client) => client.navigate(client.url));
+        })
+      )
   );
 });
 
@@ -57,6 +62,11 @@ self.addEventListener("fetch", (event) => {
   if (url.pathname === "/sw.js") return;
 
   if (event.request.mode === "navigate") {
+    event.respondWith(networkFirst(event.request));
+    return;
+  }
+
+  if (url.pathname === "/static/app.js" || url.pathname === "/static/style.css") {
     event.respondWith(networkFirst(event.request));
     return;
   }

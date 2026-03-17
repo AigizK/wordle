@@ -32,6 +32,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     static_dir = base_dir / "static"
     app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
 
+    assets_dir = base_dir.parent / "assets"
+    if assets_dir.is_dir():
+        app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+
     @app.get("/healthz")
     def healthz():
         return {"ok": True}
